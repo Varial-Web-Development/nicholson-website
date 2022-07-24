@@ -9,19 +9,19 @@ export default function FreeQuoteForm() {
       <span className="text-nicholson-blue-500 text-lg md:text-[28px] lg:text-[40px] text-center font-medium">Get a Free Quote</span>
       <div className="grid gap-1">
         <label htmlFor="name">Name</label>
-        <input name="name" className="w-full" required />
+        <input id="name" name="name" className="w-full" required />
       </div>
       <div className="grid gap-1">
         <label htmlFor="email">Email</label>
-        <input name="email" type="email" className="w-full" required />
+        <input id="email" name="email" type="email" className="w-full" required />
       </div>
       <div className="grid gap-1">
         <label htmlFor="phone">Phone</label>
-        <input name="phone" className="w-full" required />
+        <input id="phone" name="phone" className="w-full" required />
       </div>
       <div className="grid gap-1">
         <label htmlFor="insuranceType">Insurance Type</label>
-        <select required>
+        <select id="insuranceType" name="insuranceType" required>
           <option>Personal</option>
           <option>Business</option>
           <option>Life & Health</option>
@@ -29,7 +29,7 @@ export default function FreeQuoteForm() {
       </div>
       <div className="grid gap-1">
         <label htmlFor="comments">Questions or Comments</label>
-        <textarea name="comments" rows="4" className="w-full" />
+        <textarea id="comments" name="comments" rows="4" className="w-full" />
       </div>
       <button className="action-button mt-4 shadow-sm">Get Quote</button>
     </form>

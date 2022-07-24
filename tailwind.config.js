@@ -18,7 +18,7 @@ module.exports = {
         },
         'nicholson-blue': {
           400: '#81A6E4',
-          500: '#4B7BCB',
+          500: '#4675C7',
         }
       },
     },

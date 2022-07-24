@@ -4,6 +4,7 @@ import Layout from "../components/layouts/standard-page";
 import CredentialsSection from "../components/pages/home/credentials";
 import HeroSection from "../components/pages/home/hero";
 import IntroSection from "../components/pages/home/intro";
+import ValuesSection from "../components/pages/home/values";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <HeroSection />
         <IntroSection />
         <CredentialsSection />
+        <ValuesSection />
       </main>
     </Layout>
   )

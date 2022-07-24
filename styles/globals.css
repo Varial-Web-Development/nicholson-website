@@ -4,9 +4,12 @@
 
 @layer base {
   h2 { @apply text-[26px] md:text-[40px] lg:text-5xl; }
+  input, select, textarea { @apply border-2 border-[#D1D1D1] rounded-md p-2.5 text-base md:text-[19px]; }
 }
+
 @layer components {
   .section { @apply p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32; }
+  .action-button { @apply bg-nicholson-blue-500 text-white rounded-full py-2.5 px-10; }
 }
 
 body {
@@ -30,7 +33,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  p {
+  p, label {
     font-size: 19px;
   }
 }

@@ -9,6 +9,7 @@ import SpotlightSection from "../components/pages/home/spotlight";
 import TeamSection from "../components/pages/home/team";
 import TestimonialsSection from "../components/pages/home/testimonials";
 import ValuesSection from "../components/pages/home/values";
+import QuoteSection from "../components/pages/home/quote";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
         <CoverageSection />
         <SpotlightSection />
         <TestimonialsSection />
+        <QuoteSection />
       </main>
     </Layout>
   )

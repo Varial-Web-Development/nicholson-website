@@ -9,7 +9,7 @@
 
 @layer components {
   .section { @apply p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32; }
-  .action-button { @apply bg-nicholson-blue-500 text-white rounded-full py-2.5 px-10; }
+  .action-button { @apply bg-nicholson-blue-500 text-white rounded-full py-2.5 px-24 md:py-3.5 text-base md:text-[19px]; }
 }
 
 body {

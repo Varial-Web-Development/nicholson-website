@@ -1,7 +1,30 @@
+import { useState } from "react"
+import Spinner from "../ui/spinner"
+
 export default function FreeQuoteForm() {
+  const [loading, setLoading] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
+
   function handleSubmit(event) {
     event.preventDefault()
-    console.log('test')
+    
+    const { name, email, phone, insuranceType, comments } = event.target
+    setLoading(true)
+
+    fetch('/api/forms/free-quote', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        insuranceType: insuranceType.value,
+        comments: comments.value,
+      })
+    })
+    .then(response => {
+      setLoading(false)
+      setSubmitted(true)
+    })
   }
 
   return (
@@ -31,7 +54,13 @@ export default function FreeQuoteForm() {
         <label htmlFor="comments">Questions or Comments</label>
         <textarea id="comments" name="comments" rows="4" className="w-full" />
       </div>
-      <button className="action-button mt-4 shadow-sm">Get Quote</button>
+      <button className="action-button mt-4 shadow-sm grid place-items-center disabled:bg-nicholson-green-500 disabled:text-black" disabled={submitted}>
+        {submitted ? (
+          <span>✓ Submitted</span>
+        ) : (
+          loading ? <Spinner width="24" height="24" /> : <span>Get Quote</span>
+        )}
+      </button>
     </form>
   )
 }

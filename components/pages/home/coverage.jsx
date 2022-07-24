@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CoverageSection() {
   return (
-    <section className="p-4 pt-8 pb:12 md:px-[54px] md:pt-16 md:pb-24 lg:px-16 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16">
+    <section className="p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-16 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16">
       <h2 className="text-center text-[26px] md:text-[40px] lg:text-5xl">Coverage For <span className="text-nicholson-blue-500 underline underline-offset-2 decoration-nicholson-green-500">Every</span> Need</h2>
       <div className="flex flex-col gap-8 md:gap-16 lg:flex-row flex-wrap justify-center items-center w-full">
         <div className="w-full md:w-fit grid gap-6 md:gap-7 justify-center justify-items-center p-6 md:p-8 border-[6px] border-nicholson-blue-500 rounded-[50px]">

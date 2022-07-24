@@ -7,6 +7,7 @@ import IntroSection from "../components/pages/home/intro";
 import Layout from "../components/layouts/standard-page";
 import TeamSection from "../components/pages/home/team";
 import ValuesSection from "../components/pages/home/values";
+import SpotlightSection from "../components/pages/home/spotlight";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <ValuesSection />
         <TeamSection />
         <CoverageSection />
+        <SpotlightSection />
       </main>
     </Layout>
   )

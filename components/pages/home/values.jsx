@@ -34,8 +34,6 @@ function Card({ title, description, image, className, even = false }) {
       </div>
       <div className="p-4 md:p-8 grid gap-4 md:gap-8 lg:gap-0 justify-center justify-items-center relative w-full">
         <div className="grid justify-center relative lg:-top-[72px] lg:bg-white lg:px-8">
-          {/* <span className="text-center text-[32px] md:text-5xl lg:text-7xl text-[#EFF4FA] font-semibold tracking-[5.25px] uppercase absolute w-full -top-2.5 md:top-0 lg:-top-3">{title}</span> */}
-          {/* <h3 className="text-center text-[19px] md:text-[32px] lg:text-5xl tracking-[1.75px] font-semibold text-nicholson-blue-500 uppercase relative">{title}</h3> */}
           <h3 className="uppercase tracking-[1.75px] text-[19px] md:text-[32px] lg:text-5xl font-semibold text-nicholson-blue-500 text-center w-full absolute top-2.5 md:top-0 lg:top-3 z-10">{title}</h3>
           <p className="uppercase tracking-[5.25px] text-[32px] md:text-5xl lg:text-7xl font-semibold text-[#EFF4Fa] blur-[2px]">{title}</p>
         </div>

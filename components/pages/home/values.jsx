@@ -25,8 +25,8 @@ export default function ValuesSection() {
 
 function Card({ title, description, image, className, even = false }) {
   return (
-    <div className={`card w-full border-nicholson-blue-500 border-[3px] rounded-md grid lg:flex max-w-[1529px] ${even && 'justify-self-end'} ${className}`}>
-      <div className={`bg-nicholson-blue-500 p-4 md:p-8 lg:p-12 ${even && 'order-2'}`}>
+    <div className={`card w-full border-nicholson-blue-500 border-[3px] rounded-md grid lg:flex max-w-[1529px] ${even && 'lg:justify-self-end'} ${className}`}>
+      <div className={`bg-nicholson-blue-500 p-4 md:p-8 lg:p-12 ${even && 'lg:order-2'}`}>
         <picture>
           <source srcSet={`${image}?w=1200`} media="(min-width: 768px)" />
           <img src={`${image}?w=622`} alt="" width="311" height="175" className="rounded-sm w-full" />

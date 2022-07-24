@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 { @apply text-[26px] md:text-[40px] lg:text-5xl; }
+}
 @layer components {
   .section { @apply p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32; }
 }
@@ -15,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-p, span {
+h1, h2, h3, h4, h5, h6, p, span {
   letter-spacing: 0.5px;
 }
 

@@ -1,7 +1,7 @@
 export default function IntroSection() {
   return (
     <section className="px-4 pt-8 pb-12 md:px-12 md:pt-16 md:pb-24 lg:pt-24 lg:pb-32 grid gap-8">
-      <h1 className="grid uppercase w-fit mx-auto text-[22px] md:text-[32px] tracking-[1.75px]">
+      <h1 className="grid uppercase w-fit mx-auto text-[22px] md:text-[32px] lg:text-[40px] tracking-[1.75px]">
         <span>Your Local</span>
         <span className="ml-[2ch] underline underline-offset-2 decoration-nicholson-green-500 text-nicholson-blue-500"> Independent</span>
         <span className="ml-[4ch]"> Insurance Agent</span>

@@ -42,7 +42,7 @@ export default function Footer() {
           </address>
         </li>
       </ul>
-      <div className="grid gap-1">
+      <div className="grid gap-1 justify-center">
         <p className="text-white text-center md:text-[19px]">©2022 Nicholson & Associates LLC</p>
         <p className="text-white md:text-[19px] text-center">Created by <Link href="https://www.varial.dev"><a className="text-nicholson-blue-400">Varial Web Services</a></Link></p>
       </div>

@@ -26,7 +26,7 @@ function Card({ name, review }) {
       <div className="grid gap-1 md:gap-4 lg:gap-5">
         <h3 className="text-lg md:text-[32px]">{name}</h3>
         <div className="flex gap-1.5 md:gap-2.5">
-          {[...Array(5)].map((a, i) => <img src="/img/star.svg" width="18" height="18" alt="" className="md:w-[30px] lg:w-[28px]" />)}
+          {[...Array(5)].map((a, i) => <img key={`star_${index}`} src="/img/star.svg" width="18" height="18" alt="" className="md:w-[30px] lg:w-[28px]" />)}
         </div>
       </div>
       <p className="text-[15px] md:text-[21px]">{review}</p>

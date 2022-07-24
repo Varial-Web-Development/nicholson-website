@@ -5,7 +5,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-white p-4 lg:px-32 lg:py-8 flex justify-between items-center w-full shadow">
+    <nav className="bg-white p-4 md:p-6 lg:px-32 lg:py-8 flex justify-between items-center w-full shadow sticky top-0 z-50">
       <header>
         <picture>
           <source srcSet="https://media.nicholson-insurance.com/objects/icons/nicholson-logo-draft?w=480" media="(min-width: 1024px)" />
@@ -20,9 +20,9 @@ export default function Nav() {
         </picture>
       </header>
       <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
-        <img src="/img/menu.svg" width="28" height="28" alt="Menu" />
+        <img src="/img/menu.svg" width="28" height="28" alt="Menu" className="md:w-10" />
       </button>
-      <ul className={`absolute h-screen lg:h-auto top-0 left-0 w-4/5 lg:w-fit bg-white lg:bg-inherit p-4 flex-col lg:flex-row lg:gap-6 text-xl gap-2 ${menuOpen ? 'flex shadow' : 'hidden lg:static lg:flex '}`}>
+      <ul className={`absolute h-screen lg:h-auto top-0 left-0 w-4/5 z-50 lg:w-fit bg-white lg:bg-inherit p-4 py-[16.5px] md:p-[24px] md:py-[25.5px] flex-col lg:flex-row lg:gap-6 text-xl gap-2 ${menuOpen ? 'flex shadow' : 'hidden lg:static lg:flex '}`}>
         <li>
         <picture>
           <source srcSet="https://media.nicholson-insurance.com/objects/icons/nicholson-logo-draft?w=320" media="(min-width: 768px)" />

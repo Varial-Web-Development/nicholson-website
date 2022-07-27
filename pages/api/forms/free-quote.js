@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     to: process.env.MAIL_TO,
     subject: `Free quote request received at ${now}`,
     html: `
-        <p>Date ${now}</p>
+        <p>Date: ${now}</p>
         <p>Name: ${body.name}</p>
         <p>Email: ${body.email}</p>
         <p>Phone: ${body.phone}</p>

@@ -32,6 +32,10 @@ p {
   max-width: 55ch;
 }
 
+img {
+  display: block;
+}
+
 @media (min-width: 768px) {
   p, label {
     font-size: 19px;

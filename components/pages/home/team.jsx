@@ -6,8 +6,8 @@ export default function TeamSection() {
       <h2 className="text-center text-white text-[28px] md:text-[40px] lg:text-5xl">Your <span className="text-nicholson-green-500">Local</span> Team</h2>
       <div className="bg-white p-4 md:p-8 lg:p-16 grid gap-4 md:gap-8 lg:gap-12 rounded-md shadow-md max-w-4xl mx-auto">
         <picture>
-          <source srcSet="https://media.nicholson-insurance.com/objects/team/nicholson-group-photo?w=1500" media="(min-width: 768px)" />
-          <img src="https://media.nicholson-insurance.com/objects/team/nicholson-group-photo?w=750" alt="Nicholson team photo" width="312" height="148" className="rounded-md w-full" />
+          <source srcSet="https://media.nicholson-insurance.com/images/team/nicholson-group-photo?w=1500" media="(min-width: 768px)" />
+          <img src="https://media.nicholson-insurance.com/images/team/nicholson-group-photo?w=750" alt="Nicholson team photo" width="312" height="148" className="rounded-md w-full" />
         </picture>
         <p className="max-w-full">
           Our local independent agencies make insurance convenient, simple, and personal. 

@@ -4,9 +4,8 @@ export default function HeroSection() {
   return (
     <section 
       className={`
-        bg-[url(https://media.nicholson-insurance.com/objects/olympia/nicholson-olympia?w=750)] 
-        md:bg-[url(https://media.nicholson-insurance.com/objects/olympia/nicholson-olympia?w=1536)] 
-        lg:bg-[url(https://media.nicholson-insurance.com/objects/olympia/nicholson-olympia?w=2048)] 
+        bg-[url(https://media.nicholson-insurance.com/images/locations/nicholson-olympia?w=750)] 
+        md:bg-[url(https://media.nicholson-insurance.com/images/locations/nicholson-olympia?w=1536)] 
         bg-center 
         lg:bg-right
         bg-cover 

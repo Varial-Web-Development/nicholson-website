@@ -6,18 +6,18 @@ export default function ValuesSection() {
       <Card 
         title="Serve"
         description="For our team of expert advisors, customer service is of the highest importance. Our top priority is to create a streamlined and individual experience for every customer. We know that no two families, businesses, or homes are alike, which is why we tailor our services to meet your unique needs. We seek to truly understand what is important to you so that we can protect what matters most. Every client becomes part of our family, which means you can count on us to be there for you whenever you need us, no matter what."
-        image="https://media.nicholson-insurance.com/objects/stock-images/values-serve" 
+        image="https://media.nicholson-insurance.com/images/stock-images/values-serve" 
       />
       <Card 
         title="Protect"
         description="Our primary goal is to protect the community we love. With that, we specifically want to protect what matters to you and your loved ones. The investments you have made in your life and in our community are valuable, and when disaster strikes, we want you to feel confident that the things you have worked for are protected. With custom insurance options coupled with our extensive industry knowledge, we can help navigate and provide the right insurance solutions to protect your family, your accomplishments, and your livelihood. "
-        image="https://media.nicholson-insurance.com/objects/stock-images/values-protect" 
+        image="https://media.nicholson-insurance.com/images/stock-images/values-protect" 
         even={true}
       />
       <Card 
         title="Connect"
         description="The heart of Nicholson & Associates is community. As a locally owned and operated independent insurance agency, we want to see our community thrive and actively seek ways to bring growth and prosperity to others. We understand the value our diverse neighbors provide and are proud to support their efforts to create positive change in all of our lives. By connecting meaningfully with surrounding organizations, businesses, and families, we can help foster success in the lives of those that make our community great."
-        image="https://media.nicholson-insurance.com/objects/stock-images/values-connect"
+        image="https://media.nicholson-insurance.com/images/stock-images/values-connect"
       />
     </section>
   )

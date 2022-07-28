@@ -15,9 +15,9 @@ export default function Footer() {
             <Link href="https://www.google.com/maps/place/1802+Black+Lake+Blvd+SW,+Olympia,+WA+98512/@47.0317424,-122.9433301,17z/data=!4m5!3m4!1s0x549175b41f139057:0xe112ec63036a1d7d!8m2!3d47.0317424!4d-122.9411414">
               <a className="text-nicholson-blue-400 font-medium block">View on Map</a>
             </Link>
-            <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/1802+Black+Lake+Blvd+SW,+Olympia,+WA+98512/@47.0317424,-122.9433301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x549175b41f139057:0xe112ec63036a1d7d!2m2!1d-122.9411414!2d47.0317424">
+            {/* <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/1802+Black+Lake+Blvd+SW,+Olympia,+WA+98512/@47.0317424,-122.9433301,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x549175b41f139057:0xe112ec63036a1d7d!2m2!1d-122.9411414!2d47.0317424">
               <a className="text-nicholson-blue-400 font-medium block">Driving Directions</a>
-            </Link>
+            </Link> */}
           </address>
         </li>
         <li>
@@ -30,9 +30,9 @@ export default function Footer() {
             <Link href="https://www.google.com/maps/place/118+W+Pine+St,+Centralia,+WA+98531/@46.7172307,-122.9570717,17z/data=!3m1!4b1!4m5!3m4!1s0x54915fd54b5d0075:0xc146aeff56f66d82!8m2!3d46.7172307!4d-122.954883">
               <a className="text-nicholson-blue-400 font-medium block">View on Map</a>
             </Link>
-            <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/118+W+Pine+St,+Centralia,+WA+98531/@46.8773571,-123.0674907,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x54915fd54b5d0075:0xc146aeff56f66d82!2m2!1d-122.954883!2d46.7172307">
+            {/* <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/118+W+Pine+St,+Centralia,+WA+98531/@46.8773571,-123.0674907,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x54915fd54b5d0075:0xc146aeff56f66d82!2m2!1d-122.954883!2d46.7172307">
               <a className="text-nicholson-blue-400 font-medium block">Driving Directions</a>
-            </Link>
+            </Link> */}
           </address>
         </li>
         <li>
@@ -45,9 +45,9 @@ export default function Footer() {
             <Link href="https://www.google.com/maps/place/12967+US-12,+Randle,+WA+98377/@46.6038334,-121.6759865,17z/data=!3m1!4b1!4m5!3m4!1s0x549727e3b461b811:0x67348e389309ecba!8m2!3d46.6038334!4d-121.6737978">
               <a className="text-nicholson-blue-400 font-medium block">View on Map</a>
             </Link>
-            <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/12967+Highway+12,+Randle,+WA/@46.7794605,-122.6199546,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x549727e3b461b811:0x67348e389309ecba!2m2!1d-121.6737978!2d46.6038334">
+            {/* <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/12967+Highway+12,+Randle,+WA/@46.7794605,-122.6199546,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x549727e3b461b811:0x67348e389309ecba!2m2!1d-121.6737978!2d46.6038334">
               <a className="text-nicholson-blue-400 font-medium block">Driving Directions</a>
-            </Link>
+            </Link> */}
           </address>
         </li>
         <li>
@@ -60,9 +60,9 @@ export default function Footer() {
             <Link href="https://www.google.com/maps/place/Parking+lot,+9413+NE+Hwy+99,+Vancouver,+WA+98665/@45.6910761,-122.6618242,17z/data=!3m1!4b1!4m5!3m4!1s0x5495ae64a40046a1:0xfc192fd05435e06!8m2!3d45.6910762!4d-122.6573395">
               <a className="text-nicholson-blue-400 font-medium block">View on Map</a>
             </Link>
-            <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/9413+NE+Hwy+99,+Vancouver,+WA/@46.2781441,-123.9527163,8z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x5495ae64a40046a1:0xfc192fd05435e06!2m2!1d-122.6573395!2d45.6910762">
+            {/* <Link href="https://www.google.com/maps/dir/Washington+State+Capitol+Building+and+Campus,+Sid+Snyder+Avenue+Southwest,+Olympia,+WA/9413+NE+Hwy+99,+Vancouver,+WA/@46.2781441,-123.9527163,8z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x549174fcfebd0985:0x4432a80ad77ff31a!2m2!1d-122.9046248!2d47.0360451!1m5!1m1!1s0x5495ae64a40046a1:0xfc192fd05435e06!2m2!1d-122.6573395!2d45.6910762">
               <a className="text-nicholson-blue-400 font-medium block">Driving Directions</a>
-            </Link>
+            </Link> */}
           </address>
         </li>
       </ul>

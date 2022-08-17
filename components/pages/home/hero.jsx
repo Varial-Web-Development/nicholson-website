@@ -24,7 +24,7 @@ export default function HeroSection() {
     >
       <div className="relative z-10 grid gap-4 md:gap-8">
         <span className="text-[32px] md:text-5xl lg:text-[64px] leading-[39px] md:leading-[59px] lg:leading-[78px] tracking-[1.75px] font-extrabold text-white w-[10ch] md:w-[15ch]">Where Coverage Meets <span className="text-nicholson-green-500">Community</span></span>
-        <Link href="/forms/insurance-quote">
+        <Link href="/forms/free-quote">
           <a className="bg-nicholson-green-500 w-fit py-3 px-6 md:py-5 md:px-20 rounded-full font-semibold shadow-md md:text-2xl">Get a free quote today</a>
         </Link>
       </div>

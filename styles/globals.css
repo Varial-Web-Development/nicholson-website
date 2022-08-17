@@ -30,6 +30,7 @@ p {
   /* hyphens: auto; */
   font-weight: 300;
   max-width: 55ch;
+  /* line-height: 1.5; */
 }
 
 img {

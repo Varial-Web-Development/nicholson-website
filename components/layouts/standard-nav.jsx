@@ -74,6 +74,9 @@ export default function Nav() {
           <Link href="/blog">Blog</Link>
         </li>
         <li>
+          <Link href="/community">Community</Link>
+        </li>
+        <li>
           <Link href="/contact-us">Contact</Link>
         </li>
         {/* <li className=""><br /></li> */}

@@ -1,42 +1,34 @@
+import { MongoClient } from "mongodb";
 import Link from "next/link";
 import Layout from "../components/layouts/standard-page";
 
-import mongoose from "mongoose";
-import { ContentModel } from 'varial-cms-models/ContentModel'
-import { Content } from 'varial-cms-models/Content'
-
 export async function getStaticProps() {
+  const mongo = new MongoClient(process.env.MONGO_URI)
   let locations = []
   let employees = []
 
   try {
-    mongoose.connect(process.env.MONGO_URI, error => {
-      if (error) return console.error('Error connecting with mongoose', error)
-    })
+    await mongo.connect()
+    const client = mongo.db('VarialCMS')
 
-    const locationsModel = await ContentModel.findOne({ 'name.value': 'Location' })
-    locations = (await Content.find({ contentModel: locationsModel._id })).map(location => JSON.parse(JSON.stringify(location)))
-    
-    const employeeModel = await ContentModel.findOne({ 'name.value': 'Employee' })
-    employees = (await Content.find({ contentModel: employeeModel._id })).map(employee => JSON.parse(JSON.stringify(employee)))
-
+    const locationModel = await client.collection('content_models').findOne({ 'name.value': 'Location' })
+    const employeeModel = await client.collection('content_models').findOne({ 'name.value': 'Employee' })
+    await client.collection('contents').find({ contentModel: locationModel._id }).forEach(location => locations.push(location))
+    await client.collection('contents').find({ contentModel: employeeModel._id }).forEach(employee => employees.push(employee))
   } catch (error) {
     console.error('Error with Mongo', error)
   }
 
   return {
     props: {
-      locations,
-      employees,
+      locations: JSON.parse(JSON.stringify(locations)),
+      employees: JSON.parse(JSON.stringify(employees)),
     },
     revalidate: 300,
   }
 }
 
 export default function TeamPage({ locations, employees }) {
-  // console.log('locations', locations)
-  // console.log('employees', employees)
-
   return (
     <Layout>
       <main className="px-4 pt-8 pb-12 md:px-12 md:pt-16 md:pb-24 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16 lg:gap-24">
@@ -78,7 +70,6 @@ export default function TeamPage({ locations, employees }) {
               </header>
               <div className="grid gap-16 md:gap-32 lg:grid-cols-2">
                 {employees.filter(employee => employee.fields.location === location._id).map(employee => {
-
                   const [firstName, ...lastNames] = employee.fields.name.split(' ')
 
                   return (

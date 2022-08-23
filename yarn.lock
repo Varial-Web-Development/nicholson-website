@@ -2176,13 +2176,6 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-varial-cms-models@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/varial-cms-models/-/varial-cms-models-1.0.1.tgz#50e980000c8c70753db77daa5f3277c6725e846b"
-  integrity sha512-qvia65KNZbGtfOSDD0xmqCc9WsKodsldnA3Btv0tU943bcbJPknkhFzugSvhiikPBCMHPZNQikyYq59NhWI/gA==
-  dependencies:
-    mongoose "^6.5.2"
-
 webidl-conversions@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-7.0.0.tgz#256b4e1882be7debbf01d05f0aa2039778ea080a"

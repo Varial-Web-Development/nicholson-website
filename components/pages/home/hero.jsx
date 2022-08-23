@@ -11,7 +11,8 @@ export default function HeroSection() {
         bg-cover 
         lg:bg-contain
         lg:bg-no-repeat
-        w-screen 
+        w-screen
+        min-w-screen
         aspect-[375/404] 
         lg:aspect-[1920/800] 
         grid 

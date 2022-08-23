@@ -1,22 +1,23 @@
-import mongoose, { mongo } from "mongoose";
 import Layout from "../../components/layouts/standard-page";
-import { ContentModel } from "varial-cms-models";
-import { Content } from 'varial-cms-models/Content'
 import {  ObjectID } from "bson";
+import { MongoClient } from "mongodb";
 
 export async function getStaticPaths() {
+  const mongo = new MongoClient(process.env.MONGO_URI)
   let paths = []
+  let employees = []
 
   try {
-    await mongoose.connect(process.env.MONGO_URI)
+    await mongo.connect()
+    const client = mongo.db('VarialCMS')
 
-    const employeesModel = await ContentModel.findOne({ 'name.value': 'Employee' })
-    const employees = await Content.find({ contentModel: employeesModel._id }).select('fields.name')
+    const employeesModel = await client.collection('content_models').findOne({ 'name.value': 'Employee' })
+    await client.collection('contents').find({ contentModel: employeesModel._id }).forEach(employee => employees.push(employee))
 
     employees.forEach(employee => {
       paths.push({
         params: {
-          name: employee.fields.get('name').toLowerCase().replace(/ /g, '-')
+          name: employee.fields.name.toLowerCase().replace(/ /g, '-')
         }
       })
     })
@@ -31,14 +32,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  const mongo = new MongoClient(process.env.MONGO_URI)
   let teamMember = {}
   let location = {}
 
   try {
-    await mongoose.connect(process.env.MONGO_URI)
-    const employeesModel = await ContentModel.findOne({ 'name.value': 'Employee' })
+    await mongo.connect()
+    const client = mongo.db('VarialCMS')
+    const employeesModel = await client.collection('content_models').findOne({ 'name.value': 'Employee' })
   
-    teamMember = await Content
+    teamMember = await client.collection('contents')
       .findOne({ 
         contentModel: employeesModel._id,
         'fields.name': context.params.name
@@ -51,11 +54,10 @@ export async function getStaticProps(context) {
           .join(' ')
       })
   
-    location = await Content.findOne({ _id: ObjectID(teamMember.fields.get('location')) })
-  } catch (error) {
-    console.log('Mongo error', error)
-  }
-
+      location = await client.collection('contents').findOne({ _id: ObjectID(teamMember.fields.location) })
+    } catch (error) {
+      console.log('Mongo error', error)
+    }
 
   return {
     props: {
@@ -68,7 +70,6 @@ export async function getStaticProps(context) {
 
 export default function TeamMember({ teamMember, location }) {
   const { bio, emailAddress, image, jobTitles, name, phoneExtension } = teamMember.fields
-
   const [firstName, ...lastNames] = name.split(' ')
 
   return (

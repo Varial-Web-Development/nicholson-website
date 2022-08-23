@@ -4,7 +4,7 @@
 
 @layer base {
   h2 { @apply text-[26px] md:text-[40px] lg:text-5xl; }
-  input, select, textarea { @apply border-2 border-[#D1D1D1] rounded-md p-2.5 text-base md:text-[19px]; }
+  input, select, textarea { @apply border-2 border-[#CECECE] rounded-md p-2.5 text-base md:text-[19px]; }
 }
 
 @layer components {
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, li {
   letter-spacing: 0.5px;
 }
 
@@ -33,12 +33,17 @@ p {
   /* line-height: 1.5; */
 }
 
+li {
+  color: #333333;
+  font-weight: 300;
+}
+
 img {
   display: block;
 }
 
 @media (min-width: 768px) {
-  p, label {
+  p, label, li {
     font-size: 19px;
   }
 }

@@ -28,7 +28,7 @@ export default function Nav() {
             <picture>
               <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=480" media="(min-width: 1024px)" />
               <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=384" media="(min-width: 768px)" />
-              <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={51} className="md:w-48 lg:w-56" />
+              <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={41} className="md:w-48 lg:w-56" />
             </picture>
           </a>
         </Link>
@@ -63,7 +63,7 @@ export default function Nav() {
               <picture>
                 <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=480" media="(min-width: 1024px)" />
                 <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=384" media="(min-width: 768px)" />
-                <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={51} className="md:w-48 lg:w-60" />
+                <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={41} className="md:w-48 lg:w-60" />
               </picture>
             </a>
           </Link>

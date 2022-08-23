@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layouts/standard-page";
 
@@ -31,9 +32,15 @@ export async function getStaticProps() {
 export default function TeamPage({ locations, employees }) {
   return (
     <Layout>
+      <Head>
+        <title>Meet Your Local Agents - Company Directory - Nicholson & Associates Insurance</title>
+        <meta name="description" content="The team at Nicholson & Associates is passionate about people and is eager to provide an exceptional experience to every person. 
+            With years of expertise and top industry knowledge, our insurance agents are able to seamlessly create solutions to cover every insurance need. 
+            Get to know our team and see how they can help protect you, your family, or your business!" />
+      </Head>
       <main className="px-4 pt-8 pb-12 md:px-12 md:pt-16 md:pb-24 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16 lg:gap-24">
         <section className="grid justify-center gap-4 md:gap-8">
-          <h1 className="text-center text-5xl">Meet your <span className="text-nicholson-blue-500">Local</span> Agents</h1>
+          <h1 className="text-center text-5xl">Meet Your <span className="text-nicholson-blue-500">Local</span> Agents</h1>
           <p>
             The team at Nicholson & Associates is passionate about people and is eager to provide an exceptional experience to every person. 
             With years of expertise and top industry knowledge, our insurance agents are able to seamlessly create solutions to cover every insurance need. 
@@ -56,14 +63,14 @@ export default function TeamPage({ locations, employees }) {
                   <address className="not-italic grid gap-2">
                     <span className="flex-col md:flex-row flex flex-wrap md:items-center md:gap-8">
                       <Link href={`tel:${phoneNumber}`}>
-                        <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/phone.svg" width="36" /> {phoneNumber}</a>
+                        <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/phone.svg" width="36" height="36" alt="" /> {phoneNumber}</a>
                       </Link>
                       <Link href={`tel:${faxNumber}`}>
-                        <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/fax.svg" width="36" /> {faxNumber}</a>
+                        <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/fax.svg" width="36" height="36" alt="" /> {faxNumber}</a>
                       </Link>
                     </span>
                     <Link href={`https://google.com/maps/place/${address.replace(' ', '+')},+${city},+${state}+${zipCode}`}>
-                      <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/location.svg" width="36" /> {address}, {city}, {state} {zipCode}</a>
+                      <a className="flex items-center gap-2 text-lg text-[#333333] font-light tracking-wider"><img src="/img/location.svg" width="36" height="36" alt="" /> {address}, {city}, {state} {zipCode}</a>
                     </Link>
                   </address>
                 </div>
@@ -85,8 +92,8 @@ export default function TeamPage({ locations, employees }) {
                           ))}
                         </div>
                         <div className="grid gap-2">
-                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/phone.svg" width="32" /> {phoneNumber} ext. {employee.fields.phoneExtension}</p>
-                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/mail.svg" width="32" /> {employee.fields.emailAddress}</p>
+                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/phone.svg" width="32" height="32" alt="" /> {phoneNumber} ext. {employee.fields.phoneExtension}</p>
+                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/mail.svg" width="32" height="32" alt="" /> {employee.fields.emailAddress}</p>
                         </div>
                         <Link href={`/company-directory/${employee.fields.name.toLowerCase().replace(/ /g, '-')}`}>
                           <a className="bg-nicholson-blue-500 text-white rounded-full p-4 py-2 md:px-8 md:py-3 block w-full text-center md:w-fit">View full profile</a>

@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layouts/standard-page";
 import RichText from "../../util/RichText";
@@ -59,6 +60,12 @@ export default function InsuranceCompany({ company }) {
   
   return (
     <Layout>
+      <Head>
+        <title>{name} - Insurance Companies - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Nicholson & Associates is proudly partnered with many top-rated insurance carriers. 
+            Your Nicholson team is here to provide policy support anytime, but you are always welcome to contact your carrier directly if needed. 
+            Find your insurance carrier below to get started." />
+      </Head>
       <main>
         <section className="section max-w-[1400px] mx-auto grid gap-4 md:gap-8">
           <Link href="/insurance-companies"><a className="text-nicholson-blue-500 text-sm md:text-base">← Insurance Companies</a></Link>
@@ -66,7 +73,7 @@ export default function InsuranceCompany({ company }) {
           {/* <section className="flex flex-col justify÷-between lg:flex-row w-full bg-blue-200 max-w-[1400px] mx-auto gap-16"> */}
           {/* <section className="flex justify-evenly"> */}
             <picture>
-              <img src={logo.url} width={logo.width} height={logo.height} className="w-3/4 mx-auto md:w-full max-w-[400px]" />
+              <img src={logo.url} width={logo.width} height={logo.height} alt="" className="w-3/4 mx-auto md:w-full max-w-[400px]" />
             </picture>
             <section className="flex flex-col gap-6 w-full">
               <h1 className="text-left text-3xl lg:text-5xl lg:w-fit leading-tight">{name}</h1>

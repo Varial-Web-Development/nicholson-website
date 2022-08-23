@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import Layout from "../components/layouts/standard-page";
 import Spinner from "../components/ui/spinner";
@@ -37,6 +38,10 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <Head>
+        <title>Contact Us - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Have questions or need help with your insurance? We would love to hear from you! Please fill out the form below and we will be in touch with you soon." />
+      </Head>
       <main className="section grid gap-8 md:gap-16 lg:gap-24">
         <div className="grid gap-4">
           <h1 className="text-center text-5xl w-[10ch] mx-auto lg:w-[20ch] leading-tight">Contact <span className="text-nicholson-blue-500">Us</span></h1>

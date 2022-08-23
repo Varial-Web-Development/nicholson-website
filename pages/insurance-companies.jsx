@@ -1,5 +1,6 @@
 
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import Layout from "../components/layouts/standard-page";
@@ -28,11 +29,15 @@ export async function getStaticProps() {
 
 export default function InsuranceCompanies({ companies }) {
   const [query, setQuery] = useState('')
-
-  console.log('companies', companies)
   
   return (
     <Layout>
+      <Head>
+        <title>Insurance Companies - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Nicholson & Associates is proudly partnered with many top-rated insurance carriers. 
+            Your Nicholson team is here to provide policy support anytime, but you are always welcome to contact your carrier directly if needed. 
+            Find your insurance carrier below to get started." />
+      </Head>
       <main>
         <section className="section grid gap-8 md:gap-12 lg:gap-12 justify-center">
           <h1 className="text-center text-5xl w-[8ch] mx-auto lg:w-fit leading-tight">Contact Your <span className="text-nicholson-blue-500">Carrier</span></h1>

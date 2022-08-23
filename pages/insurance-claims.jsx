@@ -1,9 +1,15 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layouts/standard-page";
 
 export default function InsuranceClaims() {
   return (
     <Layout>
+      <Head>
+        <title>Insurance Claims - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Things happen unexpectedly, which is why you have insurance! 
+            Let's work together to get your claim started and taken care of right away." />
+      </Head>
       <main>
         <section className="section grid gap-8 md:gap-12 lg:gap-12 justify-center">
           <h1 className="text-center text-5xl w-[10ch] mx-auto lg:w-[20ch] leading-tight">Claims <span className="text-nicholson-blue-500">Support</span> in Your Time of Need</h1>

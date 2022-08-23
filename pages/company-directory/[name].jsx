@@ -1,6 +1,7 @@
 import Layout from "../../components/layouts/standard-page";
 import {  ObjectID } from "bson";
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 
 export async function getStaticPaths() {
   const mongo = new MongoClient(process.env.MONGO_URI)
@@ -74,6 +75,10 @@ export default function TeamMember({ teamMember, location }) {
 
   return (
     <Layout>
+      <Head>
+        <title>{name} - Company Directory - Nicholson & Associates Insurance</title>
+        <meta name="description" content={bio} />
+      </Head>
       <main className="px-4 pt-8 pb-12 md:px-12 md:pt-16 md:pb-24 lg:pt-24 lg:pb-32 grid lg:grid-cols-2 gap-8 md:gap-16 lg:gap-24 max-w-[1600px] mx-auto">
         <header>
           <picture>

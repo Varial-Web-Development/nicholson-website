@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import Layout from "../components/layouts/standard-page";
 import Spinner from "../components/ui/spinner";
@@ -44,6 +45,9 @@ export default function PolicyChange() {
 
   return (
     <Layout>
+      <Head>
+        <title>Policy Changes - Nicholson & Associates Insurance</title>
+      </Head>
       <main className="section grid gap-8">
         <h1 className="text-center text-5xl w-[10ch] mx-auto lg:w-[20ch] leading-tight">Get <span className="text-nicholson-blue-500">Connected</span> with the Click of a Button</h1>
         <p className="mx-auto">

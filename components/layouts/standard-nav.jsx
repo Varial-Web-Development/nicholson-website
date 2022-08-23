@@ -28,13 +28,13 @@ export default function Nav() {
             <picture>
               <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=480" media="(min-width: 1024px)" />
               <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=384" media="(min-width: 768px)" />
-              <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="" width={150} height={51} className="md:w-48 lg:w-56" />
+              <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={51} className="md:w-48 lg:w-56" />
             </picture>
           </a>
         </Link>
       </header>
       <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden">
-        <img src="/img/menu.svg" width="28" height="28" className="md:w-10" />
+        <img src="/img/menu.svg" width="28" height="28" alt="Menu" className="md:w-10" />
       </button>
       <ul 
         className={`
@@ -63,7 +63,7 @@ export default function Nav() {
               <picture>
                 <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=480" media="(min-width: 1024px)" />
                 <source srcSet="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=384" media="(min-width: 768px)" />
-                <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="" width={150} height={51} className="md:w-48 lg:w-60" />
+                <img src="https://media.nicholson-insurance.com/images/icons/nicholson-original-logo?w=300" alt="Home" width={150} height={51} className="md:w-48 lg:w-60" />
               </picture>
             </a>
           </Link>

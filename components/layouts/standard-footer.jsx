@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#111720] p-4 pt-8 pb-12 md:p-16 lg:px-32 lg:py-24 grid gap-8 md:gap-16 lg:gap-24 relative">
       {/* locations */}
-      <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 list-none">
       <li>
           <address className="not-italic text-center text-white leading-7 md:text-[19px]">
             <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Centralia</p>

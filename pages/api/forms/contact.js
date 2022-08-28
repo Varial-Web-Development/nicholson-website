@@ -39,6 +39,8 @@ export default async function handler(req, res) {
         await client.collection('mailing_lists').insertOne({
           name: 'VarialCMS',
         })
+
+        varialCmsList = await client.collection('mailing_lists').findOne({ name: 'VarialCMS' })
       } else {
         varialCmsList = await client.collection('mailing_lists').findOne({ name: 'VarialCMS' })
       }
@@ -90,7 +92,7 @@ export default async function handler(req, res) {
     subject: 'Contact request received',
     html: `
       <h1>Your contact request has been received!</h1>
-      <p>Thank you for choosing Nicholson & Associates! Our team of experts will be in touch with you soon.</p> 
+      <p>Thank you for choosing Nicholson & Associates! Our team will be in touch with you soon.</p> 
     `
   }
 

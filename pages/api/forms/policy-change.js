@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     subject: 'Policy change request received',
     html: `
       <h1>Your policy change request has been received!</h1>
-      <p>Thank you for choosing Nicholson & Associates! Our team of experts will be in touch with you soon.</p> 
+      <p>Thank you for choosing Nicholson & Associates! Our team will be in touch with you soon.</p> 
     `
   }
 

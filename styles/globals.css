@@ -5,10 +5,12 @@
 @layer base {
   h2 { @apply text-[26px] md:text-[40px] lg:text-5xl; }
   input, select, textarea { @apply border-2 border-[#CECECE] rounded-md p-2.5 text-base md:text-[19px]; }
+  ul { @apply list-inside list-disc; }
 }
 
 @layer components {
   .section { @apply p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32; }
+  .section-alt { @apply px-4 py-8 md:px-[54px] md:py-16 lg:px-32 }
   .action-button { @apply bg-nicholson-blue-500 text-white rounded-full py-2.5 px-24 md:py-3.5 text-base md:text-[19px]; }
 }
 
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, li {
+h1, h2, h3, h4, h5, h6, p, span, li, legend {
   letter-spacing: 0.5px;
 }
 
@@ -43,7 +45,7 @@ img {
 }
 
 @media (min-width: 768px) {
-  p, label, li {
+  p, label, li, legend {
     font-size: 19px;
   }
 }

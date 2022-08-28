@@ -14,7 +14,7 @@ export async function getStaticProps() {
     const client = mongo.db('VarialCMS')
 
     const contentModel = await client.collection('content_models').findOne({ 'name.value': 'Carrier' })
-    await client.collection('contents').find({ contentModel: contentModel._id }).forEach(company => companies.push(company))
+    await client.collection('contents').find({ contentModel: contentModel._id, published: true }).forEach(company => companies.push(company))
   } catch (error) {
     console.error('Error in getStaticProps', error)
   }

@@ -8,12 +8,10 @@ export default function Nav() {
   const [currentMenu, setCurrentMenu] = useState('')
   const [scroll, setScroll] = useState(false)
 
-  console.log(router)
-
   function NavLink({ children, ...props}) {
     return (
       <Link {...props}>
-        <a className={`font-normal  ${router.asPath === props.href ? 'decoration-nicholson-green-500 underline underline-offset-4' : ''}`}>
+        <a className={`font-normal  ${router.asPath === props.href ? 'decoration-nicholson-green-500 underline decoration-[3px] underline-offset-8' : ''}`}>
           {children}
         </a>
       </Link>
@@ -55,6 +53,7 @@ export default function Nav() {
           lg:h-auto
           lg:flex-row
           lg:w-fit
+          list-none
         `}
       >
         <li className="lg:hidden mb-4">
@@ -79,25 +78,38 @@ export default function Nav() {
             currentMenu={currentMenu} 
             setCurrentMenu={setCurrentMenu} 
             scroll={scroll} 
-            className={(router.asPath === '/about-us' || router.asPath.startsWith('/company-directory')) && 'decoration-nicholson-green-500 underline underline-offset-4'}
+            className={(router.asPath === '/about-us' || router.asPath.startsWith('/company-directory')) && 'decoration-nicholson-green-500 underline decoration-[3px] underline-offset-8'}
           >
             <NavLink href="/about-us">
-              About us
+              About Us
             </NavLink>
             <NavLink href="/company-directory">
               Our Team
             </NavLink>
+            <NavLink href="/careers">
+              Careers
+            </NavLink>
           </MenuButton>
         </li>
         <li>
-          <MenuButton name="Services" currentMenu={currentMenu} setCurrentMenu={setCurrentMenu}>
-            <NavLink href="/">Personal Insurance</NavLink>
-            <NavLink href="/">Commercial Insurance</NavLink>
-            <NavLink href="/">Life & Health Insurance</NavLink>
+          <MenuButton 
+            name="Services" 
+            currentMenu={currentMenu} 
+            setCurrentMenu={setCurrentMenu}
+            className={router.asPath.startsWith('/insurance-products') && 'decoration-nicholson-green-500 underline decoration-[3px] underline-offset-8'}
+          >
+            <NavLink href="/insurance-products/personal">Personal Insurance</NavLink>
+            <NavLink href="/insurance-products/commercial">Commercial Insurance</NavLink>
+            <NavLink href="/insurance-products/life-and-health">Life & Health Insurance</NavLink>
           </MenuButton>
         </li>
         <li>
-          <MenuButton name="Resources" currentMenu={currentMenu} setCurrentMenu={setCurrentMenu}>
+          <MenuButton 
+            name="Resources" 
+            currentMenu={currentMenu} 
+            setCurrentMenu={setCurrentMenu}
+            className={(router.asPath === '/policy-changes' || router.asPath === '/insurance-companies' || router.asPath.startsWith('/insurance-company/') || router.asPath === '/insurance-claims') && 'decoration-nicholson-green-500 underline decoration-[3px] underline-offset-8'}
+          >
             <NavLink href="/policy-changes">Policy Request</NavLink>
             <NavLink href="/insurance-companies">Companies</NavLink>
             <NavLink href="/insurance-claims">Claims Support</NavLink>
@@ -145,7 +157,6 @@ function MenuButton({ name, currentMenu, setCurrentMenu, children, anchor = 'lef
           lg:rounded-md
           lg:shadow-md
           ${anchor === 'left' ? 'lg:left-0' : 'lg:right-0'}
-          
         `}
       >
         {children}

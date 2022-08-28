@@ -67,11 +67,9 @@ export default function InsuranceCompany({ company }) {
             Find your insurance carrier below to get started." />
       </Head>
       <main>
-        <section className="section max-w-[1400px] mx-auto grid gap-4 md:gap-8">
+        <section className="section-alt max-w-[1200px] mx-auto grid gap-4 md:gap-8">
           <Link href="/insurance-companies"><a className="text-nicholson-blue-500 text-sm md:text-base">← Insurance Companies</a></Link>
-          <section className="grid lg:grid-cols-2 max-w-[1400px] mx-auto gap-8 md:gap-16 lg:gap-20">
-          {/* <section className="flex flex-col justify÷-between lg:flex-row w-full bg-blue-200 max-w-[1400px] mx-auto gap-16"> */}
-          {/* <section className="flex justify-evenly"> */}
+          <section className="grid md:grid-cols-2 max-w-[1200px] mx-auto gap-8 md:gap-16 lg:gap-20">
             <picture>
               <img src={logo.url} width={logo.width} height={logo.height} alt="" className="w-3/4 mx-auto md:w-full max-w-[400px]" />
             </picture>
@@ -96,18 +94,18 @@ export default function InsuranceCompany({ company }) {
             </section>
           </section>
         </section>
-        <section className="grid lg:flex lg:justify-between gap-8 lg:gap-20 max-w-[1400px] mx-auto section">
+        <section className="grid md:flex md:justify-between gap-8 lg:gap-12 max-w-[1200px] mx-auto section-alt">
           {(billingNumber || billingUrl) && (
             <div className="flex flex-col gap-4 w-fit">
-              <h2>Billing</h2>
+              <h2 className="text-2xl">Billing</h2>
               {billingNumber && (
-                <span className="flex items-center gap-4 text-lg md:text-xl lg:text-2xl tracking-wider font-regular">
+                <span className="flex items-center gap-4 text-lg tracking-wider font-regular">
                   <img src="/img/phone.svg" width="48" height="48" alt="" className="w-8 md:w-12" />
                   <Link href={`tel:${billingNumber}`}>{billingNumber}</Link>
                 </span>
               )}
               {billingUrl && (
-                <span className="flex items-center gap-4 text-lg md:text-xl lg:text-2xl tracking-wider font-regular">
+                <span className="flex items-center gap-4 text-lg tracking-wider font-regular">
                   <img src="/img/link.svg" width="48" height="48" alt="" className="w-8 md:w-12" />
                   <Link href={billingUrl}><a className="text-nicholson-blue-500 underline">Make a payment</a></Link>
                 </span>
@@ -116,15 +114,15 @@ export default function InsuranceCompany({ company }) {
           )}
           {(claimsNumber || claimsUrl) && (
             <div className="flex flex-col gap-4 w-fit">
-              <h2>Claims</h2>
+              <h2 className="text-2xl">Claims</h2>
               {claimsNumber && (
-                <span className="flex items-center gap-4 text-lg md:text-xl lg:text-2xl tracking-wider font-regular">
+                <span className="flex items-center gap-4 text-lg tracking-wider font-regular">
                   <img src="/img/phone.svg" width="48" height="48" alt="" className="w-8 md:w-12" />
                   <Link href={`tel:${claimsNumber}`}>{claimsNumber}</Link>
                 </span>
               )}
               {claimsUrl && (
-                <span className="flex items-center gap-4 text-lg md:text-xl lg:text-2xl tracking-wider font-regular">
+                <span className="flex items-center gap-4 text-lg tracking-wider font-regular">
                   <img src="/img/link.svg" width="48" height="48" alt="" className="w-8 md:w-12" />
                   <Link href={claimsUrl}><a className="text-nicholson-blue-500 underline">File a claim</a></Link>
                 </span>
@@ -132,9 +130,10 @@ export default function InsuranceCompany({ company }) {
             </div>
           )}
         </section>
-        <section className="section max-w-[1400px] mx-auto grid gap-4 md:gap-6 lg:gap-8">
+        <section className="section-alt max-w-[1200px] mx-auto grid gap-4 md:gap-6 lg:gap-8">
           <h2>More Information</h2>
-          <RichText src={moreInfo} maxWidth="1400px" className="grid gap-2.5" />
+          <RichText src={moreInfo} maxWidth="1200px" className="grid gap-2.5" />
+          <p className="italic">* Not all products and services may be available in your area</p>
         </section>
       </main>
     </Layout>

@@ -9,7 +9,7 @@ export default function FreeQuotePage() {
         <title>Get a Free Quote - Nicholson & Associates Insurance</title>
         <meta name="description" content="Fill out our free quote form and experience the Nicholson Difference!" />
       </Head>
-      <main className="section grid place-items-center bg-gradient-to-b from-nicholson-blue-500 to-nicholson-green-500">
+      <main className="section grid place-items-center bg-gradient-to-b from-nicholson-blue-500 via-[#2FA8E9] to-nicholson-green-500">
         <FreeQuoteForm />
       </main>
     </Layout>

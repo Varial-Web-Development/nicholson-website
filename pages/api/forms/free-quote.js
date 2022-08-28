@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     subject: 'Free quote request received',
     html: `
       <h1>Your free quote request has been received!</h1>
-      <p>Thank you for choosing Nicholson & Associates! Our team of experts will be in touch with you soon.</p> 
+      <p>Thank you for choosing Nicholson & Associates! Our team will be in touch with you soon.</p> 
     `
   }
 

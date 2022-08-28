@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function TeamSection() {
   return (
-    <section className="p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16 bg-gradient-to-b from-nicholson-blue-500 to-nicholson-green-500">
+    <section className="p-4 pt-8 pb-12 md:px-[54px] md:pt-16 md:pb-24 lg:px-32 lg:pt-24 lg:pb-32 grid gap-8 md:gap-16 bg-gradient-to-b from-nicholson-blue-500 via-[#2FA8E9] to-nicholson-green-500">
       <h2 className="text-center text-white text-[28px] md:text-[40px] lg:text-5xl">Your <span className="text-nicholson-green-500">Local</span> Team</h2>
       <div className="bg-white p-4 md:p-8 lg:p-16 grid gap-4 md:gap-8 lg:gap-12 rounded-md shadow-md max-w-4xl mx-auto">
         <picture>

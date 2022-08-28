@@ -11,7 +11,7 @@ export default function CoverageSection() {
           <p className="max-w-[35ch]">
             From specialty dwellings to antique auto, we’ve got you covered. We represent a number of well-known and trusted personal insurance carriers so you can confidently cover your personal assets and protect yourself against the unknown. We have affordable and comprehensive options for auto insurance, home insurance, and recreational vehicles, so you can easily shop for the right coverage at the right price, all in one place. 
           </p>
-          <Link href="#">
+          <Link href="/insurance-products/personal">
             <a className="bg-nicholson-blue-500 text-white w-full text-center md:text-[19px] py-2.5 rounded-full shadow-sm">Learn more</a>
           </Link>
         </div>
@@ -21,7 +21,7 @@ export default function CoverageSection() {
           <p className="max-w-[35ch]">
             Business owners have many unique exposures, and we never want you to be left with a gap in your coverage. Our commercial insurance carriers and coverage options are specifically designed with your industry in mind, so you can rest easy knowing that your business is properly protected. Through our expert advisors and robust insurance packages, we can protect your livelihood and continue to help your business thrive through thick and thin.
           </p>
-          <Link href="#">
+          <Link href="/insurance-products/commercial">
             <a className="bg-nicholson-blue-500 text-white w-full text-center md:text-[19px] py-2.5 rounded-full shadow-sm">Learn more</a>
           </Link>
         </div>
@@ -31,7 +31,7 @@ export default function CoverageSection() {
           <p className="max-w-[35ch]">
           You can never really expect the unexpected, which is why we are proud to offer insurance solutions to protect families and business owners alike. Through our health and life partners, we are able to provide protection for both individual life and health insurance as well as group benefits for employers and employees. With all the ifs in life, we are here to make sure the health and livelihood of you and your loved ones is properly protected. 
           </p>
-          <Link href="#">
+          <Link href="/insurance-products/life-and-health">
             <a className="bg-nicholson-blue-500 text-white w-full text-center md:text-[19px] py-2.5 rounded-full shadow-sm">Learn more</a>
           </Link>
         </div>

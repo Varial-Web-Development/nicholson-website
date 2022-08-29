@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function AutomotiveCommercialInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Commercial Auto Coverage for Businesses - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Your field of expertise comes with special risks and considerations that can easily be covered through our extensive commercial insurance policies for automotive industries." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

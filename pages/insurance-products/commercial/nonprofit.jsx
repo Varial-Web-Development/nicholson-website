@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function NonprofitInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Nonprofit Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="We never want your charitable efforts to be put at risk due to unforeseen circumstances, which is why we are eager to provide insurance solutions to protect your inspiring industry." />
+      </Head>
       <main> 
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

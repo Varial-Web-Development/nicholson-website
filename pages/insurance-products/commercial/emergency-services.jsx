@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function EmergencyServicesPage() {
   return (
     <Layout>
+      <Head>
+        <title>Fire & Emergency Service Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Commercial Auto Insurance protects not only the vehicles themselves, but also other drivers on the road and passengers inside." />
+      </Head>
       <main> 
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

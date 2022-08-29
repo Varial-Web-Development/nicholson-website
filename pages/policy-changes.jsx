@@ -47,6 +47,8 @@ export default function PolicyChange() {
     <Layout>
       <Head>
         <title>Policy Changes - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Have some changes? No problem! You can easily fill out our Policy Change Request Form and 
+          one of our licensed insurance agents will connect with you soon to make any necessary updates on your existing Nicholson policies." />
       </Head>
       <main className="section grid gap-8">
         <h1 className="text-center text-5xl w-[10ch] mx-auto lg:w-[20ch] leading-tight">Get <span className="text-nicholson-blue-500">Connected</span> with the Click of a Button</h1>

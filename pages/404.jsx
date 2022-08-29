@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layouts/standard-page";
 
 export default function PageNotFound() {
   return (
     <Layout>
+      <Head>
+        <title>404 Page Not Found - Nicholson & Associates Insurance</title>
+        <meta name="description" content="content not found" />
+      </Head>
       <main className="section grid place-items-center">
         <div className="grid justify-items-center gap-4 text-center">
           <img src="/img/error-404.svg" alt="404 error" width="256" height="256" />

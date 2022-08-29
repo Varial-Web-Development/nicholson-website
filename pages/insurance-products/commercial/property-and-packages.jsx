@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function PropertyAndPackagesInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Property and Packages Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="We provide comprehensive commercial packages that incorporate a range of coverages so you can seamlessly get all the protection you need through one easy policy." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

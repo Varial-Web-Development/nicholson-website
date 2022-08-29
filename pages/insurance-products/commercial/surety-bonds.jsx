@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function SuretyBondsPage() {
   return (
     <Layout>
+      <Head>
+        <title>Surety Bonds - Nicholson & Associates Insurance</title>
+        <meta name="description" content="This essential insurance coverage can safeguard a range of potential risks, from guaranteeing contracted work to protecting employer interests in the event of employee theft. It is an essential part of most any industry to create peace of mind in your workplace and with your customers." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

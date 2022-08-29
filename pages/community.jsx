@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Layout from '../components/layouts/standard-page'
 
 export default function Community() {
   return (
     <Layout>
+      <Head>
+        <title>Community - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Check out these upcoming and past events that Nicholson & Associates has proudly participated in!" />
+      </Head>
       <main>
         <section className="section-alt flex flex-col items-center gap-8">
           <h1 className="text-center text-3xl md:text-5xl max-w-[25ch] mx-auto lg:w-fit leading-tight">Connection and Commitment to <span className="text-nicholson-blue-500">Community</span></h1>

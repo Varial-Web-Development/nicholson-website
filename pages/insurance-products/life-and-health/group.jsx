@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function GroupHealthInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Group Health Coverage for Business - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Employee benefits are an exceptional way to recognize the hard work and dedication your employees exude each and every day." />
+      </Head>
       <main> 
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

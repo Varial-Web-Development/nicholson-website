@@ -39,7 +39,7 @@ export default function BlogIndex({ blogPosts }) {
           <h1 className="text-center text-3xl lg:text-5xl text-white w-[10ch] mx-auto lg:w-[20ch] leading-tight">Recent Articles</h1>
         </section>
         {/* <section className="section-alt grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
-        <section className="flex flex-wrap gap-8 w-full max-w-[1600px] mx-auto section-alt justify-center items-start">
+        <section className="grid gap-8 lg:gap-12 w-full max-w-[1600px] mx-auto section-alt justify-center items-start">
           {blogPosts.map(blogPost => {
             const createdAt = new Date(blogPost.createdAt).toDateString()
             const updatedAt = new Date(blogPost.updatedAt).toDateString()
@@ -47,17 +47,17 @@ export default function BlogIndex({ blogPosts }) {
             return (
               <div
                 key={blogPost._id}
-                className="bg-white max-w-[600px] grid rounded-md shadow"
+                className="bg-white max-w-[800px] grid lg:grid-cols-2 rounded-md shadow-md"
               >
                 <picture>
-                  <img src={coverImage.url} alt={coverImage.description} width="400" height="400" className="w-full aspect-[4/3] object-cover rounded-t-md" />
+                  <img src={coverImage.url} alt={coverImage.description} width="400" height="400" className="w-full lg:h-full aspect-square object-cover rounded-t-md lg:rounded-t-none lg:rounded-l-md" />
                 </picture>
                 <div className="flex flex-col w-full h-full gap-4 justify-between p-4 lg:p-8">
                   <div>
                     <h2 className="text-lg font-semibold">{title}</h2>
                     <p className="text-sm">{updatedAt !== createdAt ? updatedAt : createdAt}</p>
                   </div>
-                  <p className="text-[17px] w-full text-left">{description}</p>
+                  <p className="text-[16px] w-full">{description}</p>
                   <Link href={`/blog/${slug}`}>
                     <a className="bg-nicholson-blue-500 text-white w-full py-2 px-12 mt-4 rounded-full shadow block text-center">
                       Read full article

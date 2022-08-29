@@ -16,7 +16,8 @@ export default function HomePage() {
     <Layout>
       <Head>
         <title>Local Independent Insurance Agency - Nicholson & Associates</title>
-        <meta name="description" content="my description" />
+        <meta name="description" content="Nicholson & Associates has proudly been serving Centralia, Olympia, Packwood, and Vancouver and the surrounding areas since 1965, 
+          and continues to support local families and business owners alike so they can focus on what matters most." />
       </Head>
       <main>
         <HeroSection />

@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function RecreationalInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Toys & Recreational Vehicle Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="With adequate insurance coverage, you can let the good times roll no matter what happens." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

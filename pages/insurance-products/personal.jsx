@@ -48,11 +48,13 @@ export default function PersonalInsurancePage() {
         </section>
         {/* <section className="section-alt flex flex-wrap items-center justify-evenly"> */}
         {/* <section className="grid lg:grid-cols-3 justify-items-center"> */}
-        <section className="section-alt flex flex-wrap max-w-[1720px] justify-center mx-auto gap-24 md:gap-24 items-center">
+        <section className="section-alt flex flex-wrap max-w-[1720px] justify-center mx-auto gap-24 md:gap-24 items-start">
           <Card>
-            <img src="/img/car.svg" alt="" width="256" height="256" />
-            <h2 className="text-xl">Personal Auto Insurance</h2>
-            <p className="w-full max-w-[400px]">
+            <div className="grid gap-4">
+              <img src="/img/car.svg" alt="" width="256" height="256" />
+              <h2 className="text-xl">Personal Auto Insurance</h2>
+            </div>
+            <p className="w-full max-w-[400px] text-base leading-relaxed text-center">
               For many drivers, auto insurance often feels like a forced 
               additional expense. We strive to create value in this essential 
               coverage by walking you through your policy one step at a time. 
@@ -62,26 +64,17 @@ export default function PersonalInsurancePage() {
               for every need.
             </p>
             <Link href="/insurance-products/personal/auto">
-              <a 
-                className={`
-                  bg-nicholson-blue-500 
-                  p-3
-                  text-center
-                  text-white 
-                  w-full
-                  max-w-[400px]
-                  rounded-full
-                  mt-4
-                `}
-              >
-                Learn more
+              <a className="p-3 text-nicholson-blue-500 w-full rounded-full text-center border border-nicholson-blue-500 mt-4">
+                Explore Personal Auto Insurance
               </a>
             </Link>
           </Card>
           <Card>
-            <img src="/img/house.svg" alt="" width="256" height="256" />
-            <h3 className="text-xl">Home & Dwelling Insurance</h3>
-            <p className="w-full max-w-[400px]">
+            <div className="grid gap-4">
+              <img src="/img/house.svg" alt="" width="256" height="256" />
+              <h3 className="text-xl">Home & Dwelling Insurance</h3>
+            </div>
+            <p className="w-full max-w-[400px] text-base leading-relaxed text-center">
               Homeownership is an incredibly exciting accomplishment, which is why you want to make 
               sure you have the right coverage to protect your investment. We are partnered with 
               many top-rated insurance companies that are designed to cover every homeowner. We 
@@ -90,26 +83,15 @@ export default function PersonalInsurancePage() {
               property. 
             </p>
             <Link href="/insurance-products/personal/home-and-dwelling">
-              <a 
-                className={`
-                  bg-nicholson-blue-500 
-                  p-3
-                  text-center
-                  text-white 
-                  w-full
-                  max-w-[400px]
-                  rounded-full
-                  mt-4
-                `}
-              >
-                Learn more
+              <a className="p-3 text-nicholson-blue-500 w-full rounded-full text-center border border-nicholson-blue-500 mt-4">
+                Explore Home & Dwelling Insurance
               </a>
             </Link>
           </Card>
           <Card>
             <img src="/img/extreme-weather.svg" alt="" width="256" height="256" />
             <h3 className="text-xl">Catastrophic Insurance</h3>
-            <p className="w-full max-w-[400px]">
+            <p className="w-full max-w-[400px] text-base leading-relaxed text-center">
               No one wants to think about a natural disaster hitting their town, but the reality is 
               that major catastrophes can happen anywhere, even in your own backyard. With flood 
               zones and dormant volcanoes surrounding our beautiful landscapes, a catastrophic 
@@ -118,26 +100,15 @@ export default function PersonalInsurancePage() {
               a major loss, but with us, you can always be prepared. 
             </p>
             <Link href="/insurance-products/personal/catastrophic">
-              <a 
-                className={`
-                  bg-nicholson-blue-500 
-                  p-3
-                  text-center
-                  text-white 
-                  w-full
-                  max-w-[400px]
-                  rounded-full
-                  mt-4
-                `}
-              >
-                Learn more
+              <a className="p-3 text-nicholson-blue-500 w-full rounded-full text-center border border-nicholson-blue-500 mt-4">
+                Explore Catastrophic Insurance
               </a>
             </Link>
           </Card>
           <Card>
             <img src="/img/motorcycle.svg" alt="" width="256" height="256" />
             <h3 className="text-xl">Toys & Recreational Vehicle Insurance</h3>
-            <p className="w-full max-w-[400px]">
+            <p className="w-full max-w-[400px] text-base leading-relaxed text-center">
               When that sunshine hits, we are all eager to get out and enjoy it. Summer boating 
               excursions and backwoods ATV trips are all part of the adventure that awaits in the
               Pacific Northwest. Unfortunately, even the most enjoyable things can still come with 
@@ -146,26 +117,15 @@ export default function PersonalInsurancePage() {
               favorite recreational vehicles while in use and during those long off-season months. 
             </p>
             <Link href="/insurance-products/personal/recreational">
-              <a 
-                className={`
-                  bg-nicholson-blue-500 
-                  p-3
-                  text-center
-                  text-white 
-                  w-full
-                  max-w-[400px]
-                  rounded-full
-                  mt-4
-                `}
-              >
-                Learn more
+              <a className="p-3 text-nicholson-blue-500 w-full rounded-full text-center border border-nicholson-blue-500 mt-4">
+                Explore Recreational Vehicle Insurance
               </a>
             </Link>
           </Card>
           <Card>
             <img src="/img/suitcase.svg" alt="" width="256" height="256" />
             <h3 className="text-xl">Specialty Insurance</h3>
-            <p className="w-full max-w-[400px]">
+            <p className="w-full max-w-[400px] text-base leading-relaxed text-center">
               There are many special moments throughout life that are worth protecting. Traveling 
               to faraway places or throwing once-in-a-lifetime events shouldn&apos;t have anything 
               left to chance, which is why we provide specialty insurance policies to cover you 
@@ -173,19 +133,8 @@ export default function PersonalInsurancePage() {
               some of the ways we can help safeguard the memories you will cherish.
             </p>
             <Link href="/insurance-products/personal/specialty">
-              <a 
-                className={`
-                  bg-nicholson-blue-500 
-                  p-3
-                  text-center
-                  text-white 
-                  w-full
-                  max-w-[400px]
-                  rounded-full
-                  mt-4
-                `}
-              >
-                Learn more
+              <a className="p-3 text-nicholson-blue-500 w-full rounded-full text-center border border-nicholson-blue-500 mt-4">
+                Explore Specialty Insurance
               </a>
             </Link>
           </Card>
@@ -206,6 +155,8 @@ function Card({ children }) {
         w-full
         md:max-w-[600px]
         lg:max-w-[400px]
+        h-full
+        relative  
       `}
     >
       {children}

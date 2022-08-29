@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function ContractorsInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Contractor Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="We offer comprehensive commercial policies to protect your interests so you can continue to build up our cities and support the dreams of business owners and homeowners alike." />
+      </Head>
       <main> 
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

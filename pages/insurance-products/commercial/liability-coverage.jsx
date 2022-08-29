@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function LiabilityCoveragePage() {
   return (
     <Layout>
+      <Head>
+        <title>Commercial Liability Coverage for Businesses - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Our team of licensed commercial insurance agents understands the unique risks present for many different entrepreneurs and industries. Contact us today!" />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

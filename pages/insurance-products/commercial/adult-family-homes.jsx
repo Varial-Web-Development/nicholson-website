@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function AdultFamilyHomesPage() {
   return (
     <Layout>
+      <Head>
+        <title>Adult Family Home Coverage - Nicholson & Associates Insurance</title>
+        <meta name="description" content="With our comprehensive commercial insurance options, your adult family home can recover from losses and get back to supporting our elderly and individuals with disabilities." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

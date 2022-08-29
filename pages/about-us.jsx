@@ -32,9 +32,9 @@ export default function AboutPage() {
               With us, you truly become part of our Nicholson family, and with that comes a commitment to service and excellence that is unmatched anywhere else. 
             </p>
             <picture className="w-fit height-auto">
-              <source srcSet="https://media.nicholson-insurance.com/images/stock-images/cute-hat-baby-family?w=960&h=720" media="(min-width: 1024px" />
-              <source srcSet="https://media.nicholson-insurance.com/images/stock-images/cute-hat-baby-family?w=1600&h=1200" media="(min-width: 768px)" />
-              <img src="https://media.nicholson-insurance.com/images/stock-images/cute-hat-baby-family?w=752&h=564" alt="Family with baby in cute hat" width="320" height="240" className="w-full lg:max-w-[470px] rounded-md shadow block" />
+              <source srcSet="https://media.nicholson-insurance.com/images/team/paco-noelle?w=960&h=720" media="(min-width: 1024px" />
+              <source srcSet="https://media.nicholson-insurance.com/images/team/paco-noelle?w=1600&h=1200" media="(min-width: 768px)" />
+              <img src="https://media.nicholson-insurance.com/images/team/paco-noelle?w=752&h=564" alt="Paco and Noelle" width="320" height="240" className="w-full lg:max-w-[470px] rounded-md shadow block" />
             </picture>
           </div>
           <div className="grid gap-8 md:gap-16 lg:flex lg:gap-24 justify-center items-center">
@@ -90,9 +90,9 @@ export default function AboutPage() {
               Through our expertise, we are able to provide guidance and support to find the right insurance solution for you and properly protect against all types of risk. 
             </p>
             <picture className="rounded-md aspect-[4/3]">
-              <source srcSet="https://media.nicholson-insurance.com/images/stock-images/frustrated?w=960&h=720" media="(min-width: 1024px" />
-              <source srcSet="https://media.nicholson-insurance.com/images/stock-images/frustrated?w=1600&h=1200" media="(min-width: 768px)" />
-              <img src="https://media.nicholson-insurance.com/images/stock-images/frustrated?w=752&h=564" alt="Drake Nicholson" width="375" height="281" className="w-full lg:max-w-[470px] aspect-[4/3] object-cover rounded-md shadow" />
+              <source srcSet="https://media.nicholson-insurance.com/images/team/jami-cherie-carol-edited?w=960&h=720" media="(min-width: 1024px" />
+              <source srcSet="https://media.nicholson-insurance.com/images/team/jami-cherie-carol-edited?w=1600&h=1200" media="(min-width: 768px)" />
+              <img src="https://media.nicholson-insurance.com/images/team/jami-cherie-carol-edited?w=752&h=564" alt="Drake Nicholson" width="375" height="281" className="w-full lg:max-w-[470px] aspect-[4/3] object-cover rounded-md shadow" />
             </picture>
           </div>
           <div className="grid gap-8 md:gap-16 lg:flex lg:gap-24 justify-center items-center">

@@ -10,8 +10,33 @@ import TeamSection from "../components/pages/home/team";
 import TestimonialsSection from "../components/pages/home/testimonials";
 import ValuesSection from "../components/pages/home/values";
 import QuoteSection from "../components/pages/home/quote";
+import { MongoClient } from "mongodb";
 
-export default function HomePage() {
+export async function getStaticProps() {
+  const mongo = new MongoClient(process.env.MONGO_URI)
+  let events = []
+
+  try {
+    await mongo.connect()
+    const client = mongo.db('VarialCMS')
+
+    const model = await client.collection('content_models').findOne({ 'name.value': 'Event' })
+    await client.collection('contents').find({ contentModel: model._id, published: true }).forEach(event => events.push(event))
+  } catch (error) {
+    console.error('Error with Mongo', error)
+  }
+
+  return {
+    props: {
+      events: JSON.parse(JSON.stringify(events))
+    },
+    revalidate: 300,
+  }
+}
+
+export default function HomePage({ events }) {
+  console.log('events', events)
+
   return (
     <Layout>
       <Head>
@@ -26,7 +51,7 @@ export default function HomePage() {
         <ValuesSection />
         <TeamSection />
         <CoverageSection />
-        <SpotlightSection />
+        <SpotlightSection events={events} />
         <TestimonialsSection />
         <QuoteSection />
       </main>

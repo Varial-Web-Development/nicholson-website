@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function EmergencyServicesPage() {
@@ -25,8 +26,13 @@ export default function EmergencyServicesPage() {
             <li>Group Life Insurance</li>
             <li>Portable & Emergency Equipment Coverage</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#emergency-equipment">→ Emergency Equipment Coverage</Link>
+            <Link href="#life-and-injury-solutions">→ Life & Injury Solutions</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="emergency-equipment" className="section-alt flex flex-col gap-8 items-center">
           <h2>Emergency Equipment Coverage for Fire & Emergency Services</h2>
           <p>
             Fire and emergency services departments require specialized and powerful equipment to do their jobs. The most important element of any first responder team is the ability to quickly reach the scene of an accident and transport the necessary personnel and tools along with it. Fire trucks, EMS vehicles, and ambulances are critical for life-saving measures in times of need. Commercial Auto Insurance protects not only the vehicles themselves, but also other drivers on the road and passengers inside. Emergencies require urgency, and while sirens help clear the road most of the time, this doesn't mean accidents can't still happen. Commercial Auto Insurance provides liability coverage to pay for injuries or damages caused to others and comes with the option to insure the vehicle itself. With these expensive vehicles, it is a good idea to opt for this protection in the event your fire truck or ambulance is damaged either on the way to the scene or even just parked outside the hospital. 
@@ -35,7 +41,7 @@ export default function EmergencyServicesPage() {
             Inside these emergency vehicles is necessary, life-saving or disaster-stopping equipment. Fire trucks are equipped with radios, safety and first aid equipment, and of course fire hoses. Ambulances come stocked with gurneys, oxygen masks, defibrillators, and more. Covering portable equipment like this requires special coverage in the event it is damaged, destroyed, or stolen. Portable and Emergency Equipment coverage offers peace of mind by protecting this specialized equipment in case something happens to it during transit or service. 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="life-and-injury-solutions" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Life & Injury Solutions for Fire & Emergency Services</h2>
           <p>
             Firefighters, paramedics, and everything in between are here to support our community during the most tragic and desperate times. As a fire or emergency services department, you and your team place yourself in harm's way to save lives, and with that selfless service comes risk. Accident Insurance is a key coverage to have in order to protect your career firefighters, volunteer staff, paramedics, and EMTs in the event they are hurt on the job. Workers Compensation offers similar protection, but can often take longer to receive the necessary payout for injuries or treatment.

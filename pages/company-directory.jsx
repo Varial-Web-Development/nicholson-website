@@ -76,7 +76,7 @@ export default function TeamPage({ locations, employees }) {
                 </div>
               </header>
               <div className="grid gap-16 md:gap-32 lg:grid-cols-2">
-                {employees.filter(employee => employee.fields.location === location._id).map(employee => {
+                {employees.filter(employee => employee.fields.location === location._id).sort((a, b) => a.fields.name.localeCompare(b.fields.name)).map(employee => {
                   const [firstName, ...lastNames] = employee.fields.name.split(' ')
 
                   return (
@@ -92,8 +92,12 @@ export default function TeamPage({ locations, employees }) {
                           ))}
                         </div>
                         <div className="grid gap-2">
-                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/phone.svg" width="32" height="32" alt="" /> {phoneNumber} ext. {employee.fields.phoneExtension}</p>
-                          <p className="text-center md:text-left flex gap-2 items-center"><img src="/img/mail.svg" width="32" height="32" alt="" /> {employee.fields.emailAddress}</p>
+                          <Link href={`tel:${phoneNumber}`}>
+                            <a className="text-center md:text-left flex gap-2 items-center font-light tracking-[0.5px] md:text-[19px]"><img src="/img/phone.svg" width="32" height="32" alt="" /> {phoneNumber} ext. {employee.fields.phoneExtension}</a>
+                          </Link>
+                          <Link href={`mailto:${employee.fields.emailAddress}`}>
+                            <a className="text-center md:text-left flex gap-2 items-center font-light tracking-[0.5px] md:text-[19px]"><img src="/img/mail.svg" width="32" height="32" alt="" /> {employee.fields.emailAddress}</a>
+                          </Link>
                         </div>
                         <Link href={`/company-directory/${employee.fields.name.toLowerCase().replace(/ /g, '-')}`}>
                           <a className="bg-nicholson-blue-500 text-white rounded-full p-4 py-2 md:px-8 md:py-3 block w-full text-center md:w-fit">View full profile</a>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function MercantileInsurancePage() {
@@ -26,8 +27,13 @@ export default function MercantileInsurancePage() {
             <li>General Liability</li>
             <li>Inland Marine Coverage</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#property-protection">→ Property Protection</Link>
+            <Link href="#negligence-coverage">→ Negligence Coverage</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="property-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2>Property Protection for Mercantile </h2>
           <p>
             Retail shops offer everything we need, and your unique brand comes with special products to bring a new level of convenience, efficiency, or perhaps fun to the lives of your customers. You depend on your space and inventory to keep growing, which is why physical hazards can be so detrimental for retail shops. Business Personal Property coverage protects the equipment and tools you use on a daily basis to run your business, including computers, printers, cash registers, credit card readers, and more. If there is a covered loss like a fire or theft, you will be able to replace the lost or damaged equipment so you can get right back on track.
@@ -39,7 +45,7 @@ export default function MercantileInsurancePage() {
             No business owner likes to imagine that their staff would ever steal from them, but unfortunately it happens more than we might think. Employees often don't plan ahead for theft on the job, but rather are presented with small windows of opportunity where they believe they can get away with stealing. Employee Theft coverage protects you and your business against these potential opportunities and covers the financial impact of fraudulent staff activity. This could even include theft of money, securities, or customer property, so no matter the circumstances, you can recover from the loss and move forward.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="negligence-coverage" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Negligence Coverage for Mercantile</h2>
           <p>
             Retail shops traditionally operate in a physical space with displays and racks of inventory waiting for potential customers. If someone is hurt in your store or their property is somehow damaged, you want to be able to cover this and protect yourself in the process. General Liability is essential for every business owner, especially those that have a public space with foot traffic. This coverage pays for legal expenses associated with a lawsuit and settlements for medical bills or repair costs.

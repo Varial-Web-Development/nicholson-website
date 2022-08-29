@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function RestaurantsInsurancePage() {
@@ -28,8 +29,13 @@ export default function RestaurantsInsurancePage() {
             <li>Liquor Liability</li>
             <li>Spoilage</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#liability">→ Liability Coverage</Link>
+            <Link href="#product-protection">→ Product Protection</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="liability" className="section-alt flex flex-col gap-8 items-center">
           <h2>Liability Coverage for Restaurants</h2>
           <p>
             Operating a restaurant comes with its fair share of risks. With staff, contamination risks, and customer concerns, there are many hazards that restaurant owners need to prepare for. General Liability is a must-have for any restaurant since most of their service is provided in-house and customers are coming and going from the establishment. If one of your patrons is hurt while they are dining with you, General Liability will cover their medical expenses and also associated legal expenses if the claim turns into a lawsuit against the restaurant.
@@ -44,7 +50,7 @@ export default function RestaurantsInsurancePage() {
             Many restaurants see the opportunity for increased profit by serving alcohol. While it may be a great additional revenue stream, serving liquor comes with a unique set of risks and challenges. A patron could be accidentally overserved or choose to make poor decisions while under the influence of alcohol. While staff training and strict rule enforcement can help mitigate these occurrences, you cannot completely eliminate this risk from your business. Liquor Liability protects your restaurant in the event a patron is injured, causes damage to others, or hurts someone else after being served alcohol in your restaurant. No matter the situation, Liquor Liability is essential for any restaurant serving alcohol so you can be properly covered in case of a serious problem.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="product-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Product Protection for Restaurants</h2>
           <p>
             In order to make all of your menu items, you likely have a decent stock of ingredients on hand. If your cooler, fridge, or freezer fails, all of that inventory will spoil if repairs take too long or a replacement is needed. Spoilage coverage can help prevent high costs out of pocket in the event your equipment stops working, whether due to wear and tear, loss of power, or a covered loss. This coverage won't pay to replace the broken equipment or to repair any malfunctioning equipment, but it will pay for the loss of inventory so you can easily replace them and get your kitchen back in order.

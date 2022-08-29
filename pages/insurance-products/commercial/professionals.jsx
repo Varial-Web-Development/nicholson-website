@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function ProfessionalsInsurancePage() {
@@ -24,8 +25,12 @@ export default function ProfessionalsInsurancePage() {
             <li>Business Personal Property</li>
             <li>Professional Liability</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#operational-protection">→ Operational Protection</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="operational-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2>Operational Protection for Professionals</h2>
           <p>
             Professionals are the backbone of our local economy, providing essential services to the community. Doctors, accountants, attorneys, coaches, and more all work to bring happiness, health, security, and success to those they serve. In this pursuit, professionals face many risks, especially in offering expert advice and counsel to their customers. Consulting is a bulk of the job for professionals, and many clients will take your word for fact. They have developed trust in you and expect that what you tell them is in their best interest and supported by evidence. If they discover that something you said or advised has negatively affected them, they may choose to take legal action against you. Professional Liability is critical for every professional because it covers instances of negligence and pays for legal expenses and associated settlements.

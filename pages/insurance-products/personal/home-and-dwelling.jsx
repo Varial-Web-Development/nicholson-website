@@ -24,8 +24,17 @@ export default function HomeAndDwellingPage() {
             we have coverage options to cover potential risks facing every homeowner and tenant 
             alike so you never have to worry about losing your livelihood. 
           </p>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#homeowners">→ Homeowner's Insurance</Link>
+            <Link href="#manufactured">→ Manufactored Home Insurance</Link>
+            <Link href="#condo">→ Condo Insurance</Link>
+            <Link href="#renters">→ Renters Insurance</Link>
+            <Link href="#dwelling-fire">→ Dwelling Fire Insurance</Link>
+            <Link href="#key-coverages">→ Key Coverages</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="homeowners" className="section-alt flex flex-col gap-8 items-center">
           <h2>Homeowner's Insurance</h2>
           <p>
             Owning a home is a huge milestone for many people. It is the cultivation of years of 
@@ -60,12 +69,12 @@ export default function HomeAndDwellingPage() {
           </p>
           <p>
             Your home is where you build memories, start a family, and create a life for yourself 
-            and those you love. We are here to help protect what you have worked so hard to build. 
-            Contact us today to speak with a licensed personal lines agent and see if your current 
+            and those you love. We are here to help protect what you have worked so hard to build. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with a licensed personal lines agent and see if your current 
             Home Insurance is checking off all the boxes. 
           </p>
+          
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="manufactured" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Manufactured Home Insurance</h2>
           <p>
             For some aspiring homeowners, a manufactured home is an affordable and flexible option 
@@ -90,12 +99,11 @@ export default function HomeAndDwellingPage() {
           </p>
           <p>
             If you're in the market for a manufactured home, we are here to help provide you with 
-            the insight and knowledge you need to make the best decision for you and your family. 
-            Contact us today to work with one of our licensed personal lines agents and see how 
+            the insight and knowledge you need to make the best decision for you and your family. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to work with one of our licensed personal lines agents and see how 
             Manufactured Home Insurance can easily fit into your budget.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="condo" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Condo Insurance</h2>
           <p>
             As a condo owner, you have made your home in a community that suits your unique needs. 
@@ -125,7 +133,7 @@ export default function HomeAndDwellingPage() {
             Looking to cover a Condo Association? We can help with that too! 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="renters" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Renters Insurance</h2>
           <p>
             One of the biggest perks of renting is that you are not responsible for the home 
@@ -168,7 +176,7 @@ export default function HomeAndDwellingPage() {
             to speak with a personal lines insurance agent and find the right Renters policy for you. 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="dwelling-fire" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Dwelling Fire Insurance</h2>
           <p>
             As a landlord, you have a vested interest in the properties you own and rent to others. 
@@ -201,7 +209,7 @@ export default function HomeAndDwellingPage() {
           </p>
           <p>
             For your additional properties, you want to make sure they are protected at the same 
-            caliber as your own home. Contact us today to speak with a licensed personal lines 
+            caliber as your own home. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with a licensed personal lines 
             agent and learn more about how a Dwelling Fire policy can protect against unforeseen 
             risks. 
           </p>
@@ -213,7 +221,7 @@ export default function HomeAndDwellingPage() {
             see how we can help cover your home in the event of a flood or earthquake.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="key-coverages" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Key Coverages</h2>
           <div>
             <h3 className="text-lg lg:text-3xl">Dwelling</h3>

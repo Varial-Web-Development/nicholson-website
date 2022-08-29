@@ -2,6 +2,7 @@ import Layout from "../../components/layouts/standard-page";
 import {  ObjectID } from "bson";
 import { MongoClient } from "mongodb";
 import Head from "next/head";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   const mongo = new MongoClient(process.env.MONGO_URI)
@@ -94,8 +95,12 @@ export default function TeamMember({ teamMember, location }) {
           <p className="md:max-w-full lg:max-w-[60ch]">{bio}</p>
           <div className="grid gap-2">
             <div className="grid gap-2 md:flex md:flex-wrap md:gap-8">
-              <p className="flex items-center gap-[1ch] tracking-wider lg:text-lg"><img src="/img/phone.svg" width="24" height="24" alt="phone number" className="lg:w-8" /> {location.fields.phoneNumber} ext. {phoneExtension}</p>
-              <p className="flex items-center gap-[1ch] tracking-wider lg:text-lg"><img src="/img/mail.svg" width="24" height="24" alt="email address" className="lg:w-8" />{emailAddress}</p>
+              <Link href={`tel:${location.fields.phoneNumber}`}>
+                <a className="flex items-center gap-[1ch] tracking-wider lg:text-lg font-light md:text-[19px]"><img src="/img/phone.svg" width="24" height="24" alt="phone number" className="lg:w-8" /> {location.fields.phoneNumber} ext. {phoneExtension}</a>
+              </Link>
+              <Link href={`mailto:${emailAddress}`}>
+                <a className="flex items-center gap-[1ch] tracking-wider lg:text-lg font-light md:text-[19px]"><img src="/img/mail.svg" width="24" height="24" alt="email address" className="lg:w-8" />{emailAddress}</a>
+              </Link>
             </div>
               <p className="flex items-center gap-[1ch] tracking-wider lg:text-lg"><img src="/img/location.svg" width="24" height="24" alt="email address" className="lg:w-8" />{location.fields.city}, {location.fields.state}</p>
           </div>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function BarsAndPubsPage() {
@@ -26,8 +27,13 @@ export default function BarsAndPubsPage() {
             <li>General Liability</li>
             <li>Liquor Liability</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#liability-coverage">→ Liability Coverage</Link>
+            <Link href="#employee-protection">→ Employee Protection</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="liability-coverage" className="section-alt flex flex-col gap-8 items-center">
           <h2>Liability Coverage for Bars, Pubs, and Taverns</h2>
           <p>
             Bars and taverns are the draw of nightlife for most towns, and your pub has its own unique vibe, hand-selected beverages, and perhaps even entertainment. Although many people feel comfortable having a drink or two for a relaxing night out, any amount of alcohol could prove hazardous to your business if something goes wrong. Any one of your customers could potentially make the harmful decision to drink and drive, or may engage in other reckless behavior. This could include assault, vandalism, theft, and a range of other illegal activities. While you may not inherently be promoting any of these unsafe choices, you can't exactly control what your customers do when they leave your bar. Liquor Liability is critical for all bars, pubs, and taverns for this very reason. This coverage will protect your business in the event someone you served gets hurt, hurts someone else, or damages property after leaving your establishment.
@@ -42,7 +48,7 @@ export default function BarsAndPubsPage() {
             In the event your business experiences a covered loss or a lawsuit, you may be forced to close temporarily. Even short-term closure could mean thousands of dollars in lost revenue depending on the day, season, or circumstances. Each night of business is essential revenue needed to keep the business operational, so disruption to this could be catastrophic. Business Income and Extra Expense coverage will protect you in the event you experience a covered loss and are unable to remain open for a period of time. By carrying Business Income and Extra Expense, you can rest assured that your bottom line isn't negatively affected while you recover from a loss.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="employee-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Employee Protection for Bars, Pubs, and Taverns</h2>
           <p>
             It takes a team to successfully run a bar, and you have likely spent a lot of time and energy finding the right people for your crew. No matter how perfect your staff may seem, lawsuits can still arise from workplace-related incidents. Employment Practices Liability is an essential coverage to carry to protect you and your business in the event of an employment issue. This includes sexual harrassment, discrimination, wage and hour disputes, and wrongful termination, amongst other problems that may come up during the course of employment. Every workplace is at risk for experiencing these serious workplace issues, so it is always best to opt for Employment Practices Liability to protect yourself and your company in the event of a lawsuit.

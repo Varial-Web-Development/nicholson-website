@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function RecreationalInsurancePage() {
@@ -16,8 +17,17 @@ export default function RecreationalInsurancePage() {
           <p>
             The best things in life are the ones that create long-lasting memories. Cross-country roadtrips in the RV, early morning motorcycle rides through the mountains, and summertime getaways on the lakeboat all bring joyful experiences that will stand the tests of time. Enjoying these precious moments still comes with some risk and uncertainty, but this doesn't mean they have to come to an end. With adequate insurance coverage, you can let the good times roll no matter what happens.
           </p>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#boat">→ Boat Insurance</Link>
+            <Link href="#motorcycle">→ Flood Insurance</Link>
+            <Link href="#rv">→ Recreational Vehicle Insurance</Link>
+            <Link href="#atv">→ ATV Insurance</Link>
+            <Link href="#snowmobile">→ Snowmobile Insurance</Link>
+            <Link href="#key-coverages">→ Key Coverages</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="boat" className="section-alt flex flex-col gap-8 items-center">
           <h2>Boat Insurance</h2>
           <p>
             Most boats come with a serious level of investment and commitment to keep them running smoothly. As a proud boat owner, you likely spend many weekends performing cleaning and routine maintenance to ensure those coastal voyages go off without a hitch. With Boat Insurance, you can easily protect this investment of time and money and cover yourself in the event of an accident. 
@@ -29,10 +39,10 @@ export default function RecreationalInsurancePage() {
             Not only does Boat Insurance cover physical damage to your watercraft, it also protects against damages caused to others. Boat Insurance often comes with the option to add Liability coverage. Although boat collisions may not be common, this coverage is still important to carry in the event the unexpected happens. Additionally, Liability doesn't just cover damage to other watercrafts; it also can cover damage caused to government or private property such as docks or piers, which could accidentally be damaged when returning from a day out on the water. In any event, it is always better to be prepared for the worst than risk being on the hook for these costs.
           </p>
           <p>
-            With so many types of watercrafts, we know that a one-size-fits-all approach just won't cut it. Contact us today to speak with a licensed personal lines agent and learn how we can tailor a Boat Insurance policy just for you.
+            With so many types of watercrafts, we know that a one-size-fits-all approach just won't cut it. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with a licensed personal lines agent and learn how we can tailor a Boat Insurance policy just for you.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="motorcycle" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Motorcycle Insurance</h2>
           <p>
             For motorcycle riders, there is nothing quite like the open road. The freedom to explore the world around you and escape everyday life shouldn't be weighed down with worries of what-ifs. With motorcycle insurance, you can have peace of mind knowing you are properly covered no matter what. At Nicholson & Associates, we have a range of options to keep you properly protected out there on your travels.
@@ -47,10 +57,10 @@ export default function RecreationalInsurancePage() {
             Motorcycle riders are unfortunately the most vulnerable drivers on the road. Even with protective gear, a collision with a car or object can be very serious. Motorcycle policies offer medical coverage through Personal Injury Protection, which can cover your medical expenses even if you are at fault for the accident. Having this additional coverage can make a huge difference if you become injured while on your motorcycle.
           </p>
           <p>
-            Ready to hit the road right? Contact us today to speak with one of our licensed personal lines agents and see how Motorcycle Insurance can better protect you.
+            Ready to hit the road right? <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal lines agents and see how Motorcycle Insurance can better protect you.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="rv" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Recreational Vehicle Insurance</h2>
           <p>
             When it comes to experiencing a new destination, nothing beats a road trip in your own RV or camper. Traveling becomes seamless in your home away from home as you venture to faraway places, or even just your favorite spots in your own backyard. Wherever you decide to go, we understand how important it is to safeguard this special investment, which is why we offer insurance for recreational vehicles of all shapes and sizes.
@@ -62,10 +72,10 @@ export default function RecreationalInsurancePage() {
             Like an Auto policy, there are optional coverages available including Roadside Assistance and Emergency Assistance. While you may feel comfortable changing a tire on your sedan, performing any kind of maintenance on an RV or motorhome may be daunting or just plain impossible. With this additional protection, you can quickly get the emergency service you need so you can get back on the road in no time.
           </p>
           <p>
-            Keep the fun rolling with the right coverage for you. Contact us today to speak with one of our licensed personal lines agents and discover how RV Insurance can keep you protected on your next adventure.
+            Keep the fun rolling with the right coverage for you. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal lines agents and discover how RV Insurance can keep you protected on your next adventure.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="atv" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">ATV Insurance</h2>
           <p>
             Experiencing nature has never been so fun as it is on an ATV. The thrill of the speed and the unlimited off-roading potential come together to make for an exciting adventure anywhere. But like any vehicle, these rugged quads come with their own risks that every operator should consider. Although the danger may be part of the fun for some people, being prepared for an accident with ATV Insurance will give you the freedom to focus on the ride and not the risk.
@@ -74,10 +84,10 @@ export default function RecreationalInsurancePage() {
             ATV Insurance offers very similar coverage found on an Auto policy, meaning you can protect the vehicle, liability, and medical expenses all in one place. Carrying this protection can fill in any gaps you may have when it comes to replacing your ATV or paying for medical bills in the event of an accident. Additionally, ATV Insurance provides coverage for theft on and away from your property so you can get reimbursed and buy a replacement without skipping a beat. Though rare, collisions on an ATV are not impossible and any damages or injuries to others should never be paid for with your personal bank account. By opting for an ATV policy, you can cover a wide range of risks and ride worry-free. 
           </p>
           <p>
-            Get the right protection tailored for your needs. Contact us today to speak with one of our licensed personal lines agents and learn more about how ATV Insurance can cover you.
+            Get the right protection tailored for your needs. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal lines agents and learn more about how ATV Insurance can cover you.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="snowmobile" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Snowmobile Insurance</h2>
           <p>
             One silver lining to the long Washington winters is the ever-present snow in many of the surrounding mountainous areas. With the mild climate and cold conditions, there are so many places that are perfect for snowmobiling. Like any vehicle, properly protecting your investment and liability is always a good idea, and we have the knowledge and options to help you find the best coverage for your snowmobile. 
@@ -86,10 +96,10 @@ export default function RecreationalInsurancePage() {
             While many states do not require Snowmobile Insurance, it is still recommended in the event of an accident. Snowmobiles are capable of high speeds, which in a collision can result in damages and injuries to yourself and even to others. Rather than risking a financial burden on yourself, you can obtain snowmobile insurance to keep yourself protected even in the worst situations. Additionally, you can opt for coverage against physical damage caused by external forces so that if something happens to it while it is sitting, you can easily replace it.
           </p>
           <p>
-            Prepare yourself for potential risks out in the snow. Contact us today to speak with one of our licensed personal lines agents and see how Snowmobile Insurance can cover your next winter excursion. 
+            Prepare yourself for potential risks out in the snow. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal lines agents and see how Snowmobile Insurance can cover your next winter excursion. 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="key-coverages" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Key Coverages</h2>
           <div>
             <h3 className="text-lg lg:text-3xl">Comprehensive & Collision</h3>

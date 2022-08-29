@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function AutomotiveCommercialInsurancePage() {
@@ -26,8 +27,13 @@ export default function AutomotiveCommercialInsurancePage() {
             <li>Garagekeepers Liability</li>
             <li>Workers Compensation</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#auto-businesses">→ Auto Coverage for Automotive Businesses</Link>
+            <Link href="#auto-industry-risks">→ Coverage for Workplace Risks in the Auto Industry</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="auto-businesses" className="section-alt flex flex-col gap-8 items-center">
           <h2>Auto Coverage for Automotive Businesses</h2>
           <p>
             Every automotive industry is a little different when it comes to the potential risks in doing business. For most automotive businesses, Commercial Auto Insurance will be a necessary coverage to cover both physical property and liability. Commercial Auto Insurance works similarly to a Personal Auto Insurance policy. It often comes with Liability coverage in case of negligence, though it is often at higher limits than you would carry as an individual. This is because you have more assets and investments to protect if there is a claim. Additionally, most vehicles used commercially in the automotive business are quite large, so higher limits may be necessary based on the level of damage your autos could cause the average driver on the road. 
@@ -42,7 +48,7 @@ export default function AutomotiveCommercialInsurancePage() {
             If you run an auto repair shop or dealership that offers servicing, you will also need to protect your customers' vehicle with Garagekeepers Liability. Most mechanics have the space to comfortably store multiple vehicles while they are being worked on. Some jobs may take a few days or weeks to complete, and during this time the customer's vehicle is in your care. If something happens to the vehicle while it is on your property or in your control, this can lead to serious consequences. Garagekeepers Liability covers your customer's vehicle against physical damages such as a car accident, weather damage, or even theft. Garagekeepers Liability can pay the cost to take care of additional damages that happen while the car is being repaired.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="auto-industry-risk" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Coverage for Workplace Risks in the Auto Industry</h2>
           <p>
             There is a great deal of equipment needed to successfully run an auto shop, as well as other essential automotive businesses. But what happens if this equipment breaks down from some kind of mechanical failure or just normal wear and tear? While insurance won't pay for the actual repair or replacement of the equipment in this scenario, you can opt to carry Equipment Breakdown coverage for associated lost income. There is some equipment that your auto shop simply cannot go without, and if it breaks down, the time to fix it or replace it could easily lead to thousands of dollars in lost income. Equipment Breakdown coverage eases the stress of losing profits when a piece of machinery goes down so that you can compensate for lost revenue while you wait.
@@ -51,7 +57,7 @@ export default function AutomotiveCommercialInsurancePage() {
             Working in any automotive industry can be potentially hazardous simply due to the nature of the job. Truck drivers face potential harm from driving, mechanics could get hurt using heavy machinery, or an auto salesman could become injured stepping out of a car after a test drive. No matter the circumstances, workplace injuries can happen anywhere. Workers Compensation provides the necessary protection to cover their medical expenses and get them on the road to recovery so they can return in tip-top shape. 
           </p>
           <p>
-            New to automotive coverage? Our team of commercial insurance agents is here to support you in getting the right protection for your business. Contact us today to discover how we can help.
+            New to automotive coverage? Our team of commercial insurance agents is here to support you in getting the right protection for your business. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to discover how we can help.
           </p>
         </section>
       </main>

@@ -5,6 +5,7 @@ import Layout from "../../components/layouts/standard-page";
 export default function CareersApplyPage() {
   const [employers, setEmployers] = useState([])
   const [loading, setLoading] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -72,6 +73,10 @@ export default function CareersApplyPage() {
       .then(response => response.json())
       .then(response => {
         setLoading(false)
+
+        if (response.success) {
+          setSubmitted(true)
+        }
       })
       .catch(error => console.error('Fetch error', error))
   }
@@ -695,7 +700,17 @@ export default function CareersApplyPage() {
                 </button>
               )}
             </fieldset>
-            <button className="bg-nicholson-blue-500 p-4 px-12 lg:w-fit rounded-full text-white">Submit application</button>
+            <button disabled={submitted || loading} className={`${submitted ? 'bg-nicholson-green-500' : 'bg-nicholson-blue-500 text-white'} p-4 px-12 lg:w-fit rounded-full`}>
+              {submitted ? (
+                'Successfully submitted!'
+              ) : (
+                loading ? (
+                  'Sending application...'
+                ) : (
+                  'Submit application'
+                )
+              )}
+            </button>
           </form>
         </section>
       </main>

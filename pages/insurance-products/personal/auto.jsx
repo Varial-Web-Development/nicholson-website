@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function PersonalAutoPage() {
@@ -26,8 +27,14 @@ export default function PersonalAutoPage() {
             are here to offer guidance and support with your auto insurance so you can feel 
             confident that your coverage is tailored to meet your specific concerns and needs.
           </p>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#personal-auto">→ Personal auto</Link>
+            <Link href="#antique-auto">→ Antique auto</Link>
+            <Link href="#sr-22">→ SR-22</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="personal-auto" className="section-alt flex flex-col gap-8 items-center">
           <h2>Personal Auto</h2>
           <p>
             We provide coverage options for your daily driver as well as the vintage one sitting 
@@ -57,11 +64,11 @@ export default function PersonalAutoPage() {
           </p>
           <p>
             Personal Auto Insurance is an essential coverage, and we are here to help you make the 
-            most of it. Contact us today to speak with one of our licensed personal insurance 
+            most of it. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal insurance 
             agents to find the best solution for you.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="antique-auto" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Antique Auto, Collectible Cars, and Customized Vehicles</h2>
           <p>
             We know you take great pride in your vehicle and have invested your hard-earned money 
@@ -94,12 +101,12 @@ export default function PersonalAutoPage() {
             you get the coverage you need without breaking the bank. 
           </p>
           <p>
-            Contact us today to speak to one of our licensed personal lines agents and discover how 
+            <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak to one of our licensed personal lines agents and discover how 
             an Antique, Classic, or Custom Auto Insurance policy can better protect your prized 
             possession.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="sr-22" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">SR-22</h2>
           <p>
             We know that in life, we all make mistakes. When it comes to reckless driving or DUIs, 
@@ -124,7 +131,7 @@ export default function PersonalAutoPage() {
           </p>
           <p>
             With Nicholson & Associates, you never have to face the aftermath of your infraction 
-            alone. Contact us today to speak to one of our personal lines insurance agents and get 
+            alone. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak to one of our personal lines insurance agents and get 
             the support you need to get back on track. 
           </p>
         </section>

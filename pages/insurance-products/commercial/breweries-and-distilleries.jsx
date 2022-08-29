@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function BreweriesAndDistilleriesPage() {
@@ -27,8 +28,13 @@ export default function BreweriesAndDistilleriesPage() {
             <li>Spoilage</li>
             <li>Workers Compensation</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#product-protection">→ Product Protection</Link>
+            <Link href="#risk-management">→ Risk Management</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="product-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2>Product Protection for Breweries and Distilleries</h2>
           <p>
             There is an art in creation, including the brewing and distillation of craft beverages. In order to create their unique product, breweries and distilleries rely on high-tech, industry equipment to bring their product to life. Every element of the process is essential, from crafting the perfect recipe to mass production. What if one piece of the puzzle stops working? In most cases, the entire operation shuts down while you work to get the equipment repaired or replaced. Equipment Breakdown coverage offers protection against loss of income and accounts for extra expenses incurred during a breakdown period. It won't pay for the direct cost to replace any malfunctioning or worn-out equipment, but you can still count on consistent income while you get your operation back on track.
@@ -43,7 +49,7 @@ export default function BreweriesAndDistilleriesPage() {
             Additionally, if you discover the cause of the illness or injury was in fact due to negligence in production, you may have to recall every bottle processed in that same batch. Product Withdrawal coverage pays for the costs associated with recalling products that are unfit for sale or consumption so that you can keep your customers safe. It can also help cover expenses related to rebuilding reputation since recalls often have a negative impact on brand perception. These two coverages are essential in making sure that any of your completed products are covered in the event of a quality issue.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="risk-management" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Risk Management for Breweries and Distilleries</h2>
           <p>
             The industry of brewing and distillation comes with inherent risks, primarily due to the nature of the business. Breweries and distilleries use involved machinery and equipment that requires specialized training and attention to operate successfully. Staff are at risk of injury any time they are on the job, but this risk increases significantly when employees are expected to operate high-tech equipment that is found in a brewery. Workers Compensation is important to carry as a brewery or distillery in the event your staff become injured during the course of employment. If they are hurt while carrying out a task, Workers Compensation will pay for their medical expenses and ensure you aren't left financially responsible for their bills.

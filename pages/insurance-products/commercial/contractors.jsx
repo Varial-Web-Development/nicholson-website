@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function ContractorsInsurancePage() {
@@ -28,8 +29,13 @@ export default function ContractorsInsurancePage() {
             <li>Surety Bonds</li>
             <li>Tools & Equipment Coverage</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#negligence-coverage">→ Negligence Coverage</Link>
+            <Link href="#property-protection">→ Property Protection</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="negligence-coverage" className="section-alt flex flex-col gap-8 items-center">
           <h2>Negligence Coverage for Contractors & Developers</h2>
           <p>
             Developers often have many hoops to jump through before they can actually break ground. While you are going through the development process, your land will be sitting and could be a liability risk for you depending on the access and security of the property. General Liability is an essential coverage for developers to cover potential injuries or damages caused to anyone that steps onto your property. This coverage can protect you in the event of a lawsuit by paying for associated legal representation and a settlement for the claimant. It is highly recommended to opt for some kind of security to deter trespassers, including security systems, fencing, or even guard dogs. Investing in these deterrents are a great way to minimize your liability risk, but even so it is important to carry General Liability just in case someone does find a way onto your property and gets injured.
@@ -47,7 +53,7 @@ export default function ContractorsInsurancePage() {
             In addition to carrying standard insurance, it is important to also carry the necessary Surety Bonds as a contractor. Surety Bonds guarantee the work you have agreed to do as part of a contract. This means that if for some reason you cannot complete the project or cannot meet the terms you agreed to, another contractor will be brought in to finish the job. Contractors do not often accept a project with the intention of abandoning it, but life is unexpected, so it is always best to plan for the worst-case scenario to make sure your reputation, work, and clients are properly protected.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="property-protection" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Property Protection for Contractors & Developers</h2>
           <p>
             Contractors rely on the use of many tools and pieces of equipment to get the job done every day. These tools often follow them from project to project, so it is important to make sure they are covered on every jobsite. Tools and Equipment coverage provides the necessary coverage for the tools and equipment used by an individual contractor, and can also extend to employees if specified. This includes coverage against damage from a covered loss like a fire or flood as well as theft and vandalism. It is important to note that this coverage does not apply to normal wear and tear and is for sudden and unexpected malfunctioning that makes the equipment unusable. Despite this, Tools and Equipment coverage is a must-have for any contractor so you can have the protection you need no matter where your next job takes you.

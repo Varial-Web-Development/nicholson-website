@@ -17,8 +17,15 @@ export default function CatrastrophicInsurancePage() {
           <p>
             Unfortunately in life, there is the risk of severe loss. From natural disasters to serious car accidents, these unexpected catastrophes often leave a trail of expenses in their wake. Taking a gamble on a catastrophic loss may feel reasonable since these losses are usually not very common. However, it's always better to have something and not need it, than to need something and not have it. With our comprehensive catastrophic insurance policies, you can prepare for the worst-case scenario and safeguard your livelihood against extreme loss. 
           </p>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#earthquake">→ Earthquake Insurance</Link>
+            <Link href="#flood">→ Flood Insurance</Link>
+            <Link href="#personal-umbrella">→ Personal Umbrella Insurance</Link>
+            <Link href="#key-coverages">→ Key Coverages</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="earthquake" className="section-alt flex flex-col gap-8 items-center">
           <h2>Earthquake Insurance</h2>
           <p>
             Living in Washington, there aren't many regular or damaging earthquakes. However, the reality is that the beautiful mountains surrounding many of our communities are potential deadly volcanoes waiting to erupt. In the event of a volcanic event, large and devastating earthquakes will follow and cause unthinkable damage to businesses and neighborhoods alike. It is important to consider this impending situation so you are properly prepared to keep your family safe and protect your current assets. Our Nicholson & Associates team is here to help you navigate this specialized coverage to ensure you are covered no matter what. 
@@ -30,10 +37,10 @@ export default function CatrastrophicInsurancePage() {
             With an Earthquake policy or endorsement, the coverage mimics a Homeowners Insurance policy. Earthquake Insurance has set limits for the Dwelling, Separate Structures, and Personal Property, or in some cases can have a Combined Single Limit that encompasses everything under one larger limit. The biggest difference between an Earthquake policy and a Homeowners policy is the deductible. An insurance deductible is significantly higher on an Earthquake policy since it is essentially a guaranteed total loss. Earthquake Insurance deductibles are set as percentages of the Dwelling limit or Combined Single Limit, typically 10 to 25%. This is definitely a lot of out-of-pocket expense averaging at tens of thousands of dollars, so we strongly encourage families to set up an emergency savings account as part of their disaster preparedness plan.
           </p>
           <p>
-            If you want to prepare for the unexpected, our team is eager to find the right solution for you. Contact us today to speak with one of our licensed personal insurance agents and secure Earthquake Insurance for your family. 
+            If you want to prepare for the unexpected, our team is eager to find the right solution for you. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal insurance agents and secure Earthquake Insurance for your family. 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="flood" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Flood Insurance</h2>
           <p>
             In Washington, we are fortunate to be surrounded by such breathtaking wildlife and lush greenery. Much of that natural beauty is the result of abundant rainfall, something we all have come to accept in exchange for the amazing landscapes and camping destinations. But with that rain also comes potential threats of flooding, especially for certain zones throughout the state. These zones are called flood plains and have varying levels depending on the risk of flooding. If your home is located in a flood zone, then you likely were required to purchase Flood Insurance to secure your home loan. 
@@ -45,10 +52,10 @@ export default function CatrastrophicInsurancePage() {
             One unique aspect of Flood Insurance is that it is provided through a federal program called the National Flood Insurance Program (NFIP), which is supported by the Federal Emergency Management Agency, or FEMA. FEMA's primary mission is to support citizens before, during, and after natural disasters. Through the NFIP, insurance companies can offer Flood Insurance to homeowners living in a FEMA-designated flood plain so they can properly protect themselves against this natural disaster. 
           </p>
           <p>
-            Flood Insurance can feel complex, but we make it easy. Contact us today to speak with one of our licensed personal lines agents and discover your home's potential flood risk.
+            Flood Insurance can feel complex, but we make it easy. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed personal lines agents and discover your home's potential flood risk.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="personal-umbrella" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Personal Umbrella Insurance</h2>
           <p>
             With any vehicle or property insurance policy, you likely carry some sort of Liability coverage to protect you in case of negligence. If you accidentally cause damage or injury to someone else, your Liability coverage will cover those costs and keep your personal assets protected. But what happens if that Liability limit simply isn't enough? What about serious and high-cost accidents or incidents that end up being hundreds of thousands of dollars, if not millions? With a Personal Umbrella Insurance policy, you can rest easy knowing you have adequate coverage even for the worst-case scenario. 
@@ -60,10 +67,10 @@ export default function CatrastrophicInsurancePage() {
             In this world, unfortunately even the safest of drivers or most well-meaning property owners can cause serious or fatal incidents. You never want to risk you and your family's livelihood in the event you are negligent for a catastrophic loss to someone else. By carrying a Personal Umbrella Insurance policy, you can protect your assets in the event of a lawsuit and avoid being forced to liquidate properties, recreational vehicles, or savings accounts in order to support the financial burden of the injured party. You can have peace of mind knowing that everything you have worked so hard to achieve is protected and that you have high enough limits to cover whatever comes your way. 
           </p>
           <p>
-            When a severe loss occurs, you can safeguard yourself and protect others through a Personal Umbrella Insurance policy. Contact us today to speak with one of our personal lines insurance agents and learn more about how you can protect yourself even in the worst-case scenario. 
+            When a severe loss occurs, you can safeguard yourself and protect others through a Personal Umbrella Insurance policy. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our personal lines insurance agents and learn more about how you can protect yourself even in the worst-case scenario. 
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="key-coverages" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Key Coverages</h2>
           <div>
             <h3 className="text-lg lg:text-3xl">Liability</h3>

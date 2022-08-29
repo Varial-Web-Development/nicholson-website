@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../../../components/layouts/standard-page";
 
 export default function NonprofitInsurancePage() {
@@ -26,8 +27,12 @@ export default function NonprofitInsurancePage() {
             <li>General Liability</li>
             <li>Special Events Coverage</li>
           </ul>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#liability-coverage">→ Liability Coverage</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="liability-coverage" className="section-alt flex flex-col gap-8 items-center">
           <h2>Liability Coverage for Nonprofit Organizations</h2>
           <p>
             Running a nonprofit organization requires some sort of physical space, especially those providing services or products to those in need. In the event of an injury at your location or a distribution center, you want to make sure the harmed individual can be cared for. General Liability helps protect negligent acts and covers medical expenses to those injured on your premises. Even if you only have an office space just for staff, General Liability is still essential because of the additional coverage it provides, such as for marketing efforts or other administrative operations.

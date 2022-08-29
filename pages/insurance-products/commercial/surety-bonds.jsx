@@ -20,14 +20,21 @@ export default function SuretyBondsPage() {
           <p>
             There are many types of bonds, and understanding the specific ones for you and your business can feel complicated. Our experienced insurance professionals at Nicholson & Associates are well-versed in a variety of common bonds as well as state requirements. We can walk you through the process and help you easily obtain the necessary guarantees needed for your line of work. This will help you keep your customers happy and business running smoothly, even when the unexpected happens.
           </p>
+          <div className="bg-slate-100 grid gap-4 w-full max-w-[65ch] p-4 lg:p-8 shadow rounded-md">
+            <legend className="text-xl font-medium text-center">Products</legend>
+            <Link href="#contractors">→ Contractors Bonds</Link>
+            <Link href="#erisa">→ ERISA</Link>
+            <Link href="#fidelity">→ Fidelity Bond</Link>
+            <Link href="#fiduciary">→ Fiduciary Bond</Link>
+          </div>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="contractors" className="section-alt flex flex-col gap-8 items-center">
           <h2>Contractors Bonds</h2>
           <p>
-            Many industries and small business owners may contract out their work. Depending on the type of work, this may be the nature of the industry or a great way to make some extra income. Either way, Contractors Bonds are an essential part of instilling confidence in the customers and vendors that you do business with. On any given project, most skilled and experienced contractors will take the necessary steps to ensure everything is properly planned and executed to the highest standard. 
+            Many industries and small business owners may contract out their work. Depending on the type of work, this may be the nature of the industry or a great way to expand your business. Either way, Contractors Bonds are an essential part of instilling confidence in the customers and vendors that you do business with. On any given project, most skilled and experienced contractors will take the necessary steps to ensure everything is properly planned and executed to the highest standard.
           </p>
           <p>
-            However, life is unpredictable, and sometimes obstacles or external factors may prevent you from fulfilling your contract. Most contractors don't plan to leave a project unfinished, but unfortunately this isn't always in their control. Whether it's due to insufficient staff, a lack of materials, or a personal emergency, you don't want to have to abandon a job without some sort of protection in place. Contractors Bonds serve as that fail-safe solution in the event you are unable to complete the agreed upon requirements of the contract. With each type of Contractors Bond, you (the principal) guarantee that you will fulfill your obligation to your client (the obligee). In the event something goes wrong, your client can file against your bond bond to cover any financial losses they incur.
+            However, life is unpredictable, and sometimes obstacles or external factors may prevent you from fulfilling your contract. Most contractors don't plan to leave a project unfinished, but unfortunately this isn't always in their control. Whether it's due to insufficient staff, a lack of materials, or a personal emergency, neither you nor your clients want to  have a job abandoned   without some sort of protection in place. Contractors Bonds serve as that fail-safe solution in the event you are unable to complete the agreed upon requirements of the contract. With each type of Contractors Bond, you (the principal) guarantee that you will fulfill your obligation to your client (the obligee). In the event something goes wrong, your client can file against your bond to cover any financial losses they incur. It's important to note that in this circumstance, you are responsible to indemnify the bonding company (the surety) in the event they do pay anything to your client on your behalf.
           </p>
           <p>
             A Contractors Bond or Surety Bond is the perfect solution to life's uncertainties in contracted work. There are many reasons a project may not go as planned, but the most common Surety Bonds for contractors include:
@@ -43,10 +50,10 @@ export default function SuretyBondsPage() {
             Bonds of this nature are typically good for one year and are relatively inexpensive considering the amount of peace of mind and protection they offer your clients. Additionally, if you wish to become licensed as a contractor, you will need to obtain a bond to demonstrate that you are conscious of potential pitfalls and are taking precautions to protect those you do business with. 
           </p>
           <p>
-            Getting licensed and bonded as a contractor is a great step in the right direction to build trust and rapport with your clients. Contact us today to speak with one of our licensed commercial lines agents and find the right Contractors Bond for you.
+            Getting licensed and bonded as a contractor is a great step in the right direction to build trust and rapport with your clients. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed commercial lines agents and find the right Contractors Bond for you.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="erisa" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">ERISA</h2>
           <p>
             As an employer, you may wish to provide retirement plans or health insurance benefits to your staff. Your employees are the backbone of your business, so it goes without saying that you want to offer perks that will make them feel valued on your team. With these types of benefits, it is important to make sure that you take the step to protect your employees. No one likes to think about retirement funds being mismanaged, or worse, stolen by administrators. However, in reality this is a very real risk facing the management level of many organizations, so it is always better to be prepared and protect your employees with an ERISA Bond. 
@@ -55,10 +62,10 @@ export default function SuretyBondsPage() {
             The history of the ERISA bond begins in 1974. A federal law was passed in the United States regulating retirement and health plans in the private sector, called the Employment Retirement Income Security Act, or ERISA. What does this mean for employers? As a business owner with staff, it is your responsibility to ensure that your employees' benefits are protected against misconduct by your administrative team, otherwise called fiduciaries. With an ERISA Bond, your employees are protected against misuse or misappropriation of retirement funds by fiduciaries. In the event misconduct occurs, your employee can file against the ERISA Bond for the financial loss, which the fiduciary is responsible for paying back.
           </p>
           <p>
-            ERISA Bonds are quite specialized and can feel more complex than other insurance products. Contact us today to speak with one of our commercial lines agents to learn if an ERISA Bond is necessary for your business.
+            ERISA Bonds are quite specialized and can feel more complex than other insurance products. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our commercial lines agents to learn if an ERISA Bond is necessary for your business.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="fidelity" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Fidelity Bond</h2>
           <p>
             Businesses are only as strong as the staff that support them. As a business owner, you strive to do your due diligence and hire only the most qualified and ethical people to represent you and your brand. Unfortunately, even staff that interview well and perform exceptionally can still potentially disappoint when it comes to honesty. Fidelity Bonds help protect your interests as an employer in the event of employee dishonesty or fraud.
@@ -77,10 +84,10 @@ export default function SuretyBondsPage() {
             <li>External audits of the books by an independent accountant or accounting firm</li>
           </ul>
           <p>
-            Even with all of these practices in place, employee fraud can still happen. Contact us today to speak to one of our licensed commercial insurance agents and learn how you can better protect yourself and your clients against employee dishonesty.
+            Even with all of these practices in place, employee fraud can still happen. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak to one of our licensed commercial insurance agents and learn how you can better protect yourself and your clients against employee dishonesty.
           </p>
         </section>
-        <section className="section-alt flex flex-col gap-8 items-center">
+        <section id="fiduciary" className="section-alt flex flex-col gap-8 items-center">
           <h2 className="max-w-[20ch] leading-tight text-center">Fiduciary Bond</h2>
           <p>
             Throughout life, there are many instances where someone may be appointed to make financial or legal decisions on behalf of someone else. This is most common in cases where someone passes away, or perhaps becomes unable to manage their assets due to illness. The person designated to carry out these duties is called a fiduciary, and they have the responsibility and obligation to honor the represented person's wishes. In the event there is a breach of trust and mismanagement of assets, a Fiduciary Bond can be used to protect the interests of the deceased or incapacitated individual. 
@@ -92,7 +99,7 @@ export default function SuretyBondsPage() {
             Oftentimes, bonds are required by the court when you have been appointed as a fiduciary. They will indicate a required bond amount, which is based primarily on the value of the estate you are representing. Don't worry- the cost of the bond is much lower than the amount you are being covered for, often falling around a few hundred dollars a year.
           </p>
           <p>
-            If you are planning to designate a fiduciary or have been recently appointed, now is the time to look at options to protect yourself. Contact us today to speak with one of our licensed commercial agents and discover how a Fiduciary Bond can cover you and your assets.
+            If you are planning to designate a fiduciary or have been recently appointed, now is the time to look at options to protect yourself. <Link href="/contact-us"><a className="text-nicholson-blue-500 underline">Contact us</a></Link> today to speak with one of our licensed commercial agents and discover how a Fiduciary Bond can cover you and your assets.
           </p>
         </section>
       </main>

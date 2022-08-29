@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Layout from "../../components/layouts/standard-page";
 import RichText from "../../util/RichText";
 
@@ -47,22 +48,25 @@ export async function getStaticProps(context) {
 }
 
 export default function BlogPost({ blogPost }) {
-  // console.log('blogpost', JS)ON.parse(blogPost.fields.body)
   const createdAt = new Date(blogPost.createdAt).toDateString()
   const updatedAt = new Date(blogPost.updatedAt).toDateString()
   const { title, description, coverImage, body } = blogPost.fields
   return (
     <Layout>
+      <Head>
+        <title>{title} - Blog - Nicholson & Associates Insurance</title>
+        <meta name="description" content={description} />
+      </Head>
       <main className="w-full max-w-[1200px] mx-auto">
         <section className="section-alt">
-          <h1 className="text-3xl lg:text-5xl leading-tight">{title}</h1>
+          <h1 className="text-3xl lg:text-5xl md:!leading-snug">{title}</h1>
           <p>{createdAt}</p>
           <br />
           <picture>
             <img src={coverImage.url} alt={coverImage.description} width="400" height="300" className="w-full aspect-[4/3] object-cover rounded-md" />
           </picture>
           <br />
-          <RichText src={body} className="grid gap-2 py-4" />
+          <RichText src={body} className="py-2" maxWidth="1200px" />
         </section>
       </main>
     </Layout>

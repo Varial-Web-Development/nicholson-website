@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layouts/standard-page";
 
@@ -26,11 +27,12 @@ export async function getStaticProps() {
 }
 
 export default function CareersPage({ jobListings = [] }) {
-
-  console.log('job listings', jobListings)
-
   return (
     <Layout>
+      <Head>
+        <title>Careers - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Our team is made up of the best and brightest, and we are eager to bring aboard talented, like-minded individuals to join us in making our local communities an even better place to be." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">
@@ -42,7 +44,7 @@ export default function CareersPage({ jobListings = [] }) {
           <p>
             We want work to feel like your home away from home. That's why we make every effort to create a welcoming and positive space that you will enjoy coming to each day. As a member of our team, you can enjoy many wonderful perks, including:
           </p>
-          <ul>
+          <ul className="w-full max-w-[65ch]">
             <li>Paid time off</li>
             <li>Paid holidays</li>
             <li>Group health insurance benefits</li>
@@ -57,6 +59,9 @@ export default function CareersPage({ jobListings = [] }) {
             Apply today by emailing <Link href="mailto:billie@nichinsure.com"><a className="underline text-nicholson-blue-500">billie@nichinsure.com</a></Link> or 
             complete our application and be a part of something great. We can't wait to meet you! 
           </p>
+          <p className="italic">
+            * Please note we are a non-smoking workplace, including cigarettes, e-cigarettes, and cannabis products.
+          </p>
           <Link href="/careers/apply"><a className="bg-nicholson-blue-500 text-white p-4 px-24 rounded-full w-full lg:w-fit text-center shadow-sm">Apply now</a></Link>
         </section>
         <section className="section-alt flex flex-col gap-8 items-center">
@@ -69,9 +74,9 @@ export default function CareersPage({ jobListings = [] }) {
             </p>
           )}
           {jobListings.length > 0 && (
-            <div className="w-full max-w-[65ch] grid gap-8">
+            <div className="w-full max-w-[65ch] grid gap-4">
               {jobListings.map(job => (
-                <details key={job._id} className="bg-slate-100 p-4">
+                <details key={job._id} className="bg-slate-100 p-4 rounded-md">
                   <summary className="cursor-pointer select-none text-lg"><h3 className="inline">{job.fields.position}</h3></summary>
                   <div className="grid gap-4 p-4">
                     {job.fields.description && <p className="text-base max-w-full">{job.fields.description}</p>}

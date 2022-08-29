@@ -19,11 +19,23 @@ export default function RichText({ src, maxWidth = '', className }) {
           )
         }
 
+        // if (type === 'h2') {
+        //   if (children.length === 1 && children[0].text === '') return null
+
+        //   return (
+        //     <h2 className={`mt-8 ${maxWidth ? `w-[100%] max-w-[${maxWidth}]` : ''}`}>{children.map(childNode => <>{childNode.text}</>)}</h2>
+        //   )
+        // }
+
+        if (type === 'h2') {
+          return <h2 style={{ marginBlock: '2em 0.75em', fontSize: 'clamp(20px, calc(0.5vw + 1em), 28px)', }}>{children.map(childNode => <>{childNode.text}</>)}</h2>
+        }
+
         if (type === 'paragraph') {
           if (children.length === 1 && children[0].text === '') return null
 
           return (
-            <p key={`node_${index}`} className={maxWidth ? `max-w-[${maxWidth}]` : ''}>{children.map((childNode, childNodeIndex) => <span key={`node_${index}_childNode_${childNodeIndex}`}>{childNode.text}</span>)}</p>
+            <p key={`node_${index}`} style={{ maxWidth, marginBlockEnd: '1em' }}>{children.map((childNode, childNodeIndex) => <span key={`node_${index}_childNode_${childNodeIndex}`}>{childNode.text}</span>)}</p>
           )
         }
 

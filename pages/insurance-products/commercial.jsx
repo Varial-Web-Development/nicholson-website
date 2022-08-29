@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layouts/standard-page";
 
 export default function CommercialInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Commercial Insurance - Insurance Products - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Through our comprehensive Commercial Insurance policies and coverage options, every business owner can feel confident in protecting one of their greatest accomplishments." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className="text-center text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">

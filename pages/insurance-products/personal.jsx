@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/layouts/standard-page";
@@ -5,6 +6,10 @@ import Layout from "../../components/layouts/standard-page";
 export default function PersonalInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Personal Insurance - Insurance Products - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Our team is experienced and licensed in Property & Casualty insurance products, including auto insurance, home and specialty dwelling policies, and coverage for toys such as motorcycles, boats, and RVs. Here you can find all the protection you need in one convenient place. " />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 

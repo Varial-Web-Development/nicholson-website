@@ -5,7 +5,7 @@
 @layer base {
   h2 { @apply text-[26px] md:text-[40px] lg:text-5xl; }
   input, select, textarea { @apply border-2 border-[#CECECE] rounded-md p-2.5 text-base md:text-[19px]; }
-  ul { @apply list-inside list-disc; }
+  ul { @apply list-inside list-disc w-full max-w-[65ch]; }
 }
 
 @layer components {

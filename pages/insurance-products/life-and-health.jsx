@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layouts/standard-page";
 
 export default function LifeAndHealthInsurancePage() {
   return (
     <Layout>
+      <Head>
+        <title>Life & Health Insurance - Insurance Products - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Life and health insurance options can take the guesswork out of these what-ifs by giving you a plan for the worst-case scenario." />
+      </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
           <h1 className={`mx-auto leading-tight lg:w-fit w-[8ch] max-w-[20ch] text-5xl text-center `}>

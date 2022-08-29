@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import Layout from "../../components/layouts/standard-page";
 
@@ -64,7 +65,6 @@ export default function CareersApplyPage() {
 
     setLoading(true)
 
-    // console.log('submit', application)
     fetch('/api/forms/job-application', {
       method: 'POST',
       body: JSON.stringify({...application})
@@ -78,6 +78,10 @@ export default function CareersApplyPage() {
 
   return (
     <Layout>
+      <Head>
+        <title>Employment Application - Nicholson & Associates Insurance</title>
+        <meta name="description" content="Ready to start your next career? Apply today by emailing billie@nichinsure.com or complete our application and be a part of something great. We can't wait to meet you!" />
+      </Head>
       <main className="section grid place-items-center bg-gradient-to-b from-nicholson-blue-500 to-nicholson-green-500">
         <section className="flex flex-col gap-8 bg-white rounded-md shadow w-full max-w-[860px] p-4 md:p-8">
           <h1 className="text-center text-3xl md:text-5xl max-w-[20ch] mx-auto lg:w-fit leading-tight">Employment Application</h1>

@@ -63,7 +63,9 @@ export default function BlogPost({ blogPost }) {
           <p>{createdAt}</p>
           <br />
           <picture>
-            <img src={coverImage.url} alt={coverImage.description} width="400" height="300" className="w-full aspect-[4/3] object-cover rounded-md" />
+            <source srcSet={`${coverImage.url}?w=2400`} media="(min-width: 1024px)" />
+            <source srcSet={`${coverImage.url}?w=1600`} media="(min-width: 768px)" />
+            <img src={`${coverImage.url}?w=750`} alt={coverImage.description} width="400" height="300" className="w-full aspect-[4/3] object-cover rounded-md" />
           </picture>
           <br />
           <RichText src={body} className="py-2" maxWidth="1200px" />

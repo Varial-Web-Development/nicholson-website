@@ -50,7 +50,8 @@ export default function BlogIndex({ blogPosts }) {
                 className="bg-white max-w-[800px] grid lg:grid-cols-2 rounded-md shadow-md"
               >
                 <picture>
-                  <img src={coverImage.url} alt={coverImage.description} width="400" height="400" className="w-full lg:h-full aspect-square object-cover rounded-t-md lg:rounded-t-none lg:rounded-l-md" />
+                  <source srcSet={`${coverImage.url}?w=1600`} media="(min-width: 768px)" />
+                  <img src={`${coverImage.url}?w=750`} alt={coverImage.description} width="400" height="400" className="w-full lg:h-full aspect-square object-cover rounded-t-md lg:rounded-t-none lg:rounded-l-md" />
                 </picture>
                 <div className="flex flex-col w-full h-full gap-4 justify-between p-4 lg:p-8">
                   <div>

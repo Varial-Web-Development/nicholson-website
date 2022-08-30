@@ -7,7 +7,8 @@ export default function Footer() {
       <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 list-none max-w-full">
       <li>
           <address className="not-italic text-center text-white leading-7 md:text-[19px]">
-            <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Centralia</p>
+            {/* <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Centralia</p> */}
+            <Link href="/company-directory#centralia"><a className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center leading-normal">Centralia</a></Link>
             <p className="text-center font-normal">118 W Pine St</p>
             <p className="text-center font-normal">Centralia, Washington 98531</p>
             <p className="text-center font-normal">Phone: (360) 736-7601</p>
@@ -22,7 +23,7 @@ export default function Footer() {
         </li>
         <li>
           <address className="not-italic text-center text-white md:text-[19px] leading-7">
-            <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Olympia</p>
+            <Link href="/company-directory#olympia"><a className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center leading-normal">Olympia</a></Link>
             <p className="text-center font-normal">1802 Black Lake Blvd SW #301</p>
             <p className="text-center font-normal">Olympia, Washington 98512</p>
             <p className="text-center font-normal">Phone: (360) 352-8444</p>
@@ -37,7 +38,8 @@ export default function Footer() {
         </li>
         <li>
           <address className="not-italic text-center text-white leading-7 md:text-[19px]">
-            <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Packwood</p>
+            <Link href="/company-directory#packwood"><a className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center leading-normal">Packwood</a></Link>
+            {/* <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Packwood</p> */}
             <p className="text-center font-normal">12967 Hwy 12</p>
             <p className="text-center font-normal">Packwood, Washington 98361</p>
             <p className="text-center font-normal">Phone: (360) 494-7126</p>
@@ -52,7 +54,8 @@ export default function Footer() {
         </li>
         <li>
           <address className="not-italic text-center text-white leading-7 md:text-[19px]">
-            <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Vancouver / Portland</p>
+            <Link href="/company-directory#vancouver-portland"><a className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center leading-normal">Vancouver / Portland</a></Link>
+            {/* <p className="text-[22px] md:text-2xl text-nicholson-green-500 font-semibold text-center">Vancouver / Portland</p> */}
             <p className="text-center font-normal">9413 NE Hwy 99, Ste 2</p>
             <p className="text-center font-normal">Vancouver, Washington 98665</p>
             <p className="text-center font-normal">Phone: (360) 254-2842</p>

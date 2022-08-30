@@ -110,9 +110,10 @@ export default function Nav() {
             setCurrentMenu={setCurrentMenu}
             className={(router.asPath === '/policy-changes' || router.asPath === '/insurance-companies' || router.asPath.startsWith('/insurance-company/') || router.asPath === '/insurance-claims') && 'decoration-nicholson-green-500 underline decoration-[3px] underline-offset-8'}
           >
-            <NavLink href="/policy-changes">Policy Request</NavLink>
-            <NavLink href="/insurance-companies">Companies</NavLink>
+            <NavLink href="/policy-changes">Policy Services</NavLink>
+            <NavLink href="https://nichinsure.epaypolicy.com">Make a Payment</NavLink>
             <NavLink href="/insurance-claims">Claims Support</NavLink>
+            <NavLink href="/insurance-companies">Companies</NavLink>
           </MenuButton>
         </li>
         <li>

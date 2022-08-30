@@ -12,18 +12,8 @@ export default function PersonalInsurancePage() {
       </Head>
       <main>
         <section className="section-alt flex flex-col gap-8 items-center">
-          <h1 
-            className={`
-              mx-auto 
-              leading-tight
-              lg:w-fit 
-              w-[8ch]
-              max-w-[20ch] 
-              text-5xl 
-              text-center 
-            `}
-          >
-            Personal Insurance with a Personal Touch
+          <h1 className={`mx-auto leading-tight lg:w-fit w-[8ch] max-w-[20ch] text-5xl text-center `}>
+            Personal Insurance with a <span className="text-nicholson-blue-500">Personal</span> Touch
           </h1>
           <p>
             Insurance can sometimes feel like a disconnected and complicated 

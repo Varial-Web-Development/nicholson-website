@@ -51,7 +51,7 @@ export default function TeamPage({ locations, employees }) {
           const { city, address, bio, faxNumber, image, phoneNumber, state, zipCode } = location.fields
           
           return (
-            <section key={location._id} className="grid gap-16 lg:gap-24 max-w-[1664px] mx-auto">
+            <section id={city.replace(/\//g, '-').toLowerCase()} key={location._id} className="grid gap-16 lg:gap-24 max-w-[1664px] mx-auto">
               <header className="grid lg:grid-cols-2 gap-8 lg:items-center">
                 <picture>
                   <source srcSet={`${image.url}?w=1664`} media="(min-width: 768px)" />

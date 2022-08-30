@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function TestimonialsSection() {
   return (
     <section className="section grid gap-8 md:gap-16 lg:gap-24">
@@ -15,6 +17,14 @@ export default function TestimonialsSection() {
           name="Will Peppers Jr"
           review="Great place for low rates and excellent staff and service I recommend all I know looking for insurance."
         />
+      </div>
+      <div className="grid gap-4">
+        <p className="mx-auto md:text-xl w-fit">Had a great experience? We'd love to hear from you!</p>
+        <Link href="https://g.page/r/CUkA4Xfz8m_QEB0/review">
+          <a className="text-nicholson-blue-500 lg:mx-auto block lg:text-center md:text-xl">
+            → Leave a review
+          </a>
+        </Link>
       </div>
     </section>
   )

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section 
       className={`
         bg-[url(https://media.nicholson-insurance.com/images/locations/nicholson-olympia?w=750)] 
-        md:bg-[url(https://media.nicholson-insurance.com/images/locations/nicholson-olympia?w=1536)] 
+        md:bg-[url(https://media.nicholson-insurance.com/images/locations/nicholson-olympia?w=1536)]
         bg-center 
         lg:bg-right
         bg-cover 
@@ -14,7 +14,7 @@ export default function HeroSection() {
         w-screen
         min-w-screen
         aspect-[375/404] 
-        lg:aspect-[1920/800] 
+        lg:aspect-[1920/750] 
         grid 
         items-center 
         relative 
@@ -29,7 +29,7 @@ export default function HeroSection() {
           <a className="bg-nicholson-green-500 w-fit py-3 px-6 md:py-5 md:px-20 rounded-full font-semibold shadow-md md:text-2xl">Get a free quote today</a>
         </Link>
       </div>
-      <div className="w-screen aspect-[375/404] lg:aspect-[1920/800] bg-gradient-to-r from-nicholson-blue-500 lg:via-nicholson-blue-500 lg:to-[hsl(218_25%_26%_/_0)] absolute" />
+      <div className="w-screen aspect-[375/404] lg:aspect-[1920/750] bg-gradient-to-r from-nicholson-blue-500 lg:via-nicholson-blue-500 lg:to-[hsl(218_25%_26%_/_0)] absolute" />
     </section>
   )
 }

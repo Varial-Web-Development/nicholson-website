@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 import Layout from "../components/layouts/standard-page";
 import Spinner from "../components/ui/spinner";
@@ -45,8 +46,11 @@ export default function ContactPage() {
       <main className="section grid gap-8 md:gap-16 lg:gap-24">
         <div className="grid gap-4">
           <h1 className="text-center text-5xl w-[10ch] mx-auto lg:w-[20ch] leading-tight">Contact <span className="text-nicholson-blue-500">Us</span></h1>
-          <p className="mx-auto">
+          <p className="w-full max-w-[55ch] mx-auto">
             Have questions or need help with your insurance? We would love to hear from you! Please fill out the form below and we will be in touch with you soon. 
+          </p>
+          <p className="w-full max-w-[55ch] mx-auto">
+            Already working with a Nicholson agent? <Link href="/company-directory"><a className="text-nicholson-blue-500 underline">Contact them</a></Link> directly!
           </p>
         </div>
         <section className="grid lg:grid-cols-2 max-w-[1416px] mx-auto gap-8 lg:gap-32 w-full items-center">

@@ -51,7 +51,7 @@ export default async function handler(req, res) {
         <p>Time at current address: ${body.currentAddressLength}</p>
         <p>Previous address: ${body.previousAddress}</p>
         <hr>
-        <p>Eligable for hire in United State: ${body.eligableInUS}</p>
+        <p>Eligible for hire in United State: ${body.eligableInUS}</p>
         <p>18 years or older: ${body.olderThan18}</p>
         <hr>
         <p>Served in military: ${body.militaryService}</p>

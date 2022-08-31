@@ -200,7 +200,7 @@ export default function CareersApplyPage() {
               </div>
               <hr />
               <fieldset className="flex gap-4 items-center py-2">
-                <legend>Are you eligable to work in the United States?</legend>
+                <legend>Are you eligible to work in the United States?</legend>
                 <label className="flex gap-1.5 items-center">
                   Yes
                   <input 

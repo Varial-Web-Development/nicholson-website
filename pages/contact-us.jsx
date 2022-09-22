@@ -12,7 +12,7 @@ export default function ContactPage() {
   function handleSubmit(event) {
     event.preventDefault()
     setLoading(true)
-    const { name, email, phone, comments, newsletter } = event.target
+    const { name, email, phone, comments, newsletter, city, referredBy } = event.target
 
     fetch('/api/forms/contact', {
       method: 'POST',
@@ -20,6 +20,8 @@ export default function ContactPage() {
         name: name.value,
         email: email.value,
         phone: phone.value,
+        city: city.value,
+        referredBy: referredBy.value,
         comments: comments.value,
         newsletter: newsletter.checked,
       })
@@ -81,6 +83,20 @@ export default function ContactPage() {
               <input 
                 id="phone"
                 name="phone"
+              />
+            </label>
+            <label htmlFor="city" className="grid">
+              City
+              <input 
+                id="city"
+                name="city"
+              />
+            </label>
+            <label htmlFor="refferedBy" className="grid">
+              Referred by
+              <input 
+                id="referredBy"
+                name="referredBy"
               />
             </label>
             <label htmlFor="comments" className="grid">

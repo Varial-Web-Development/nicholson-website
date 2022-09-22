@@ -14,9 +14,7 @@ export default async function handler(req, res) {
     key: API_KEY,
   })
 
-  const now = new Date().toLocaleString()
-
-  console.log('newsletter', body.newsletter)
+  const now = new Date()
 
   if (body.newsletter) {
     const mongo = new MongoClient(process.env.MONGO_URI)
@@ -106,6 +104,8 @@ export default async function handler(req, res) {
         <p>Name: ${body.name}</p>
         <p>Email: ${body.email}</p>
         <p>Phone: ${body.phone}</p>
+        <p>City: ${body.city}</p>
+        <p>Referred by: ${body.referredBy}</p>
         <p>Questions/Comments: ${body.comments}</p>
       `
   }

@@ -8,7 +8,7 @@ export default function FreeQuoteForm() {
   function handleSubmit(event) {
     event.preventDefault()
     
-    const { name, email, phone, insuranceType, comments } = event.target
+    const { name, email, phone, insuranceType, comments, referredBy, city, } = event.target
     setLoading(true)
 
     fetch('/api/forms/free-quote', {
@@ -17,7 +17,9 @@ export default function FreeQuoteForm() {
         name: name.value,
         email: email.value,
         phone: phone.value,
+        city: city.value,
         insuranceType: insuranceType.value,
+        referredBy: referredBy.value,
         comments: comments.value,
       })
     })
@@ -41,6 +43,14 @@ export default function FreeQuoteForm() {
       <div className="grid gap-1">
         <label htmlFor="phone">Phone</label>
         <input id="phone" name="phone" className="w-full" required />
+      </div>
+      <div className="grid gap-1">
+        <label htmlFor="city">City</label>
+        <input id="city" name="city" className="w-full" />
+      </div>
+      <div className="grid gap-1">
+        <label htmlFor="referredBy">Referred by</label>
+        <input id="refferedBy" name="referredBy" className="w-full" />
       </div>
       <div className="grid gap-1">
         <label htmlFor="insuranceType">Insurance Type</label>

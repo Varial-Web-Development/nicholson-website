@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     key: API_KEY,
   })
 
-  const now = new Date().toLocaleString()
+  const now = new Date()
 
   const customerEmail = {
     from: `Nicholson & Associates <${process.env.MAIL_FROM}>`,
@@ -34,6 +34,8 @@ export default async function handler(req, res) {
         <p>Name: ${body.name}</p>
         <p>Email: ${body.email}</p>
         <p>Phone: ${body.phone}</p>
+        <p>City: ${body.city}</p>
+        <p>Referred by: ${body.referredBy}</p>
         <p>Insurance Type: ${body.insuranceType}</p>
         <p>Questions/Comments: ${body.comments}</p>
       `

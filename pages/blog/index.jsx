@@ -40,7 +40,7 @@ export default function BlogIndex({ blogPosts }) {
         </section>
         {/* <section className="section-alt grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
         <section className="grid gap-8 lg:gap-12 w-full max-w-[1600px] mx-auto section-alt justify-center items-start">
-          {blogPosts.map(blogPost => {
+          {blogPosts.reverse().map(blogPost => {
             const createdAt = new Date(blogPost.createdAt).toDateString()
             const updatedAt = new Date(blogPost.updatedAt).toDateString()
             const { title, description, slug, coverImage } = blogPost.fields

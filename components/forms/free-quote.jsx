@@ -1,12 +1,18 @@
 import { useState } from "react"
 import Spinner from "../ui/spinner"
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function FreeQuoteForm() {
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_CLIENT_KEY
+  const [verified, setVerified] = useState(false)
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [verifyError, setVerifyError] = useState('')
 
   function handleSubmit(event) {
     event.preventDefault()
+
+    if (!verified) return setVerifyError('Please verify that you are human.')
     
     const { name, email, phone, insuranceType, comments, referredBy, city, } = event.target
     setLoading(true)
@@ -64,6 +70,12 @@ export default function FreeQuoteForm() {
         <label htmlFor="comments">Questions or Comments</label>
         <textarea id="comments" name="comments" rows="4" className="w-full" />
       </div>
+      
+      <ReCAPTCHA
+          sitekey={recaptchaSiteKey}
+          onChange={value => setVerified(value ? true : false)}
+      />
+      {verifyError && <p className="text-red-700 font-medium inline">{verifyError}</p>}
       <button className="action-button mt-4 shadow-sm grid place-items-center disabled:bg-nicholson-green-500 disabled:text-black" disabled={submitted}>
         {submitted ? (
           <span>✓ Submitted</span>

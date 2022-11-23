@@ -3,16 +3,25 @@ import Link from "next/link";
 import { useState } from "react";
 import Layout from "../components/layouts/standard-page";
 import Spinner from "../components/ui/spinner";
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function ContactPage() {
   const [loading, setLoading] = useState(false)
   const [sent, setSent] = useState(false)
   const [error, setError] = useState('')
 
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_CLIENT_KEY
+  const [verified, setVerified] = useState(false)
+  const [verifyError, setVerifyError] = useState('')
+
   function handleSubmit(event) {
     event.preventDefault()
     setLoading(true)
     const { name, email, phone, comments, newsletter, city, referredBy } = event.target
+
+    if (!verified) return setVerifyError('Please verify that you are human.')
+
+    setVerifyError('')
 
     fetch('/api/forms/contact', {
       method: 'POST',
@@ -117,6 +126,11 @@ export default function ContactPage() {
               />
               Sign up for newsletter?
             </label>
+            <ReCAPTCHA
+                sitekey={recaptchaSiteKey}
+                onChange={value => setVerified(value ? true : false)}
+            />
+            {verifyError && <p className="text-red-700 font-medium inline">{verifyError}</p>}
             <button 
               className={`bg-nicholson-blue-500 rounded-full text-white py-2.5 px-8 w-fit ${sent && 'bg-nicholson-green-500 text-black'}`}
               disabled={sent || loading}

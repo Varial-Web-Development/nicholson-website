@@ -13,6 +13,8 @@ export default function FreeQuoteForm() {
     event.preventDefault()
 
     if (!verified) return setVerifyError('Please verify that you are human.')
+
+    setVerifyError('')
     
     const { name, email, phone, insuranceType, comments, referredBy, city, } = event.target
     setLoading(true)

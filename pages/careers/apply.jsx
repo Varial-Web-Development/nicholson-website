@@ -1,14 +1,25 @@
 import Head from "next/head";
 import { useState } from "react";
 import Layout from "../../components/layouts/standard-page";
+import ReCAPTCHA from 'react-google-recaptcha'
 
 export default function CareersApplyPage() {
   const [employers, setEmployers] = useState([])
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_CLIENT_KEY
+  const [verified, setVerified] = useState(false)
+  const [verifyError, setVerifyError] = useState('')
+
   function handleSubmit(event) {
     event.preventDefault()
+
+    if (!verified) return setVerifyError('Please verify that you are human.')
+
+    setVerifyError('')
+
+
     const { 
       firstName, 
       middleInitial, 
@@ -700,6 +711,11 @@ export default function CareersApplyPage() {
                 </button>
               )}
             </fieldset>
+            <ReCAPTCHA
+                sitekey={recaptchaSiteKey}
+                onChange={value => setVerified(value ? true : false)}
+            />
+            {verifyError && <p className="text-red-700 font-medium inline">{verifyError}</p>}
             <button disabled={submitted || loading} className={`${submitted ? 'bg-nicholson-green-500' : 'bg-nicholson-blue-500 text-white'} p-4 px-12 lg:w-fit rounded-full`}>
               {submitted ? (
                 'Successfully submitted!'
